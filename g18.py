@@ -2,7 +2,7 @@
 Author: @ydzat
 Date: 2024-12-13 16:08:49
 LastEditors: @ydzat
-LastEditTime: 2024-12-13 17:15:09
+LastEditTime: 2024-12-13 17:21:47
 Description: 
 '''
 import os
@@ -21,7 +21,7 @@ attributes = {
     'capacity': 17,
     'muzzle_velocity': 400
 }
-jklh
+
 parts = {
     'lower_rail': ['practical_weapon_light', 'olight_baldr_pro_r_multi_function_flashlight'],
     'muzzle': ['smg_echo_suppressor', 'practical_pistol_flash_hider', 'purifica_pistol_suppressor', 'elite_pistol_muzzle_brake'],
