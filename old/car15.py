@@ -2,7 +2,7 @@
 Author: @ydzat
 Date: 2024-12-13 16:07:32
 LastEditors: @ydzat
-LastEditTime: 2024-12-13 19:15:55
+LastEditTime: 2024-12-14 05:48:53
 Description: 
 '''
 import os
@@ -21,6 +21,8 @@ attributes = {
     'capacity': 20,
     'muzzle_velocity': 550
 }
+
+
 
 parts = {
     'lower_rail': {
@@ -212,6 +214,8 @@ parts = {
     }
 }
 
+
+
 model = gp.Model("car15")
 
 # 为每个插槽和配件创建二进制变量
@@ -232,6 +236,19 @@ dependent_parts = ['left_rail', 'upper_rail', 'foregrip', 'grip_mount', 'left_pa
 for part in dependent_parts:
     model.addConstr(sum(choices[part][item] for item in parts[part]) <= barrel_selected, 
                     name=f"{part}_depends_on_barrel")
+
+
+# 如果在rear_grip中选择了ar_heavy_tower_grip，那么grip_mount才能选择
+# 获取 ar_heavy_tower_grip 的选择变量
+ar_heavy_tower_selected = choices['rear_grip']['ar_heavy_tower_grip']
+
+# 添加约束：如果选择了 ar_heavy_tower_grip，则 grip_mount 可选
+for item in parts['grip_mount']:
+    model.addConstr(choices['grip_mount'][item] <= ar_heavy_tower_selected, 
+                    name=f"grip_mount_allowed_with_ar_heavy_tower")
+
+
+
 
 # 如果barrel中选择了ar_specops_integrally_suppressed_combo，那么不能选择muzzle/lower_rail，但是可以选择foregrip/rail_bipod/upper_rail/left_rail/upper_patch/left_patch/right_patch
 # 获取 ar_specops_integrally_suppressed_combo 的选择变量
@@ -323,14 +340,8 @@ for part in ['riser_optic', 'tactical_device']:
         model.addConstr(choices[part][item] <= multi_purpose_selected, 
                         name=f"{part}_forbidden_without_multi_purpose")
 
-# 如果在rear_grip中选择了ar_heavy_tower_grip，那么grip_mount才能选择
-# 获取 ar_heavy_tower_grip 的选择变量
-ar_heavy_tower_selected = choices['rear_grip']['ar_heavy_tower_grip']
 
-# 添加约束：如果选择了 ar_heavy_tower_grip，则 grip_mount 可选
-for item in parts['grip_mount']:
-    model.addConstr(choices['grip_mount'][item] <= ar_heavy_tower_selected, 
-                    name=f"grip_mount_allowed_with_ar_heavy_tower")
+
 
 # 指定使用mag: m4_45
 model.addConstr(choices['mag']['m4_45'] == 1, name="use_mag_m4_45")
@@ -358,6 +369,8 @@ for part, items in parts.items():
     for item, effects in items.items():
         for i, key in enumerate(attribute_keys):
             total_attributes[key] += choices[part][item] * effects[i]
+
+# 校准属性值
 
 # 最终的handling不应小于50
 model.addConstr(total_attributes['Handling'] >= 50, name="minimum_handling")

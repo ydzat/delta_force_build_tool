@@ -1,0 +1,38 @@
+{
+    "rifle": {
+        "car15": {
+            "dependencies": {
+                "barrel": {
+                    "ar_specops_integrally_suppressed_combo": ["foregrip", "rail_bipod", "upper_rail", "left_rail", "upper_patch", "left_patch", "right_patch"],
+                    "ar_trench_standard_barrel_combo": ["foregrip", "rail_bipod", "upper_rail", "left_rail", "upper_patch", "left_patch", "right_patch"],
+                    "ar_gabriel_long_barrel_combo": ["foregrip", "rail_bipod", "upper_rail", "left_rail", "upper_patch", "left_patch", "right_patch"],
+                    "ar_standard_barrel_combo": ["foregrip", "rail_bipod", "upper_rail", "left_rail", "upper_patch", "left_patch", "right_patch"],
+                    "ar_carbon_fiber_barrel_combo": ["foregrip", "rail_bipod", "upper_rail", "left_rail", "upper_patch", "left_patch", "right_patch"]
+                },
+                "rear_grip":{
+                    "ar_heavy_tower_grip":["grip_mount"]
+                },
+                "optic": {
+                    "multi_purpose_tactical_riser":["riser_optic", "tactical_device"]
+                }
+            },
+            "conflicts": {
+                "barrel": {
+                    "ar_specops_integrally_suppressed_combo": ["muzzle", "lower_rail"],
+                    "ar_raid_short_barrel_combo": ["lower_rail", "upper_patch", "left_patch", "right_patch", "rail_bipod", "right_rail"],
+                    "ar_trench_standard_barrel_combo": ["lower_rail"],
+                    "ar_gabriel_long_barrel_combo": ["lower_rail"],
+                    "ar_standard_barrel_combo": ["lower_rail"],
+                    "ar_carbon_fiber_barrel_combo": ["lower_rail"]
+                },
+                "mag": {
+                    "m4_60": ["mag_mount"]
+                },
+                "stock_kit": {
+                    "resonant_2_integral_stock": ["stock", "rear_grip"],
+                    "restricted_zone_integral_stock": ["stock", "rear_grip"]
+                }
+            }
+        }
+    }
+}
