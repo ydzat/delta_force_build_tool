@@ -2,7 +2,7 @@
 Author: @ydzat
 Date: 2024-12-13 16:07:32
 LastEditors: @ydzat
-LastEditTime: 2024-12-14 05:48:53
+LastEditTime: 2024-12-14 14:48:20
 Description: 
 '''
 import os
@@ -228,6 +228,7 @@ for part, items in parts.items():
 # 添加约束：每个部件最多选择一个配件
 for part, items in parts.items():
     model.addConstr(sum(choices[part][item] for item in items) <= 1, name=f"choose_one_{part}")
+
 
 # 约束：如果barrel没有选择，那么left_rail/upper_rail/foregrip/grip_mount/left_patch/right_patch/upper_patch也不能选择，但是能选择lower_rail
 barrel_selected = sum(choices['barrel'][item] for item in parts['barrel'])

@@ -1,3 +1,10 @@
+'''
+Author: @ydzat
+Date: 2024-12-13 23:16:20
+LastEditors: @ydzat
+LastEditTime: 2024-12-14 17:01:31
+Description: 
+'''
 from data_manager import DataManager
 from optimizer import Optimizer
 
@@ -19,10 +26,10 @@ def main():
     optimizer.add_constraints([
         {"attribute": "mag", "operator": "=", "value": "m4_45"},
         {"attribute": "Handling", "operator": ">=", "value": 50},
-        {"attribute": "Stability", "operator": ">=", "value": 50}
+        {"attribute": "Stability", "operator": ">=", "value": 50},
         #{"attribute": "rear_grip", "operator": "=", "value": "invasion_rear_grip"}
         #{"attribute": "rear_grip", "operator": "=", "value": "ar_heavy_tower_grip"}
-        #{"attribute": "barrel", "operator": "=", "value": "ar_specops_integrally_suppressed_combo"}
+        {"attribute": "barrel", "operator": "=", "value": "ar_specops_integrally_suppressed_combo"}
 
     ])
 

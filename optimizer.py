@@ -27,7 +27,7 @@ class Optimizer:
         # Create binary decision variables for parts
         for part, items in parts.items():
             self.choices[part] = {}
-            for item in items:
+            for item, effects in items.items():
                 self.choices[part][item] = self.model.addVar(vtype=GRB.BINARY, name=f"{part}_{item}")
 
         # Each part can have at most one attachment selected
@@ -59,56 +59,65 @@ class Optimizer:
 
     def _apply_dependencies(self, dependencies):
         """
-        Apply dependency rules.
+        Apply dependency rules using Big-M constraints for multiple dependencies,
+        and closure constraints for single dependencies.
         :param dependencies: A dictionary defining dependencies and allowed parts.
         """
+        M = 1e6  # Big-M constant
+
         for part, dependency in dependencies.items():
             # 遍历当前部件的所有依赖配件
             for candidate, allowed_slots in dependency.items():
-                candidate_var = self.choices.get(part, {}).get(candidate)
-                
-                if candidate_var is None:
-                    # 如果候选配件不存在，跳过
-                    continue
+                candidate_var = self.choices[part][candidate]  # 当前部件的二进制变量
 
                 for slot in allowed_slots:
-                    if slot in self.choices:
-                        # 收集目标部件的所有变量
-                        allowed_vars = [
-                            self.choices[slot][item]
-                            for item in self.weapon_data["parts"].get(slot, {})
-                        ]
+                    # 检查该 slot 是否仅受此 candidate 的影响
+                    total_dependencies = sum(1 for c in dependency.values() if slot in c)
+                    print("total_dependencies", total_dependencies)
 
-                        # 添加约束：如果 candidate 被选择，允许目标部件
-                        self.model.addConstr(
-                            gp.quicksum(allowed_vars) >= candidate_var,
-                            name=f"dependency_{part}_{candidate}_enables_{slot}"
-                        )
+                    for item in self.weapon_data["parts"][slot].keys():
+                        slot_var = self.choices[slot][item]  # 目标部件的二进制变量
 
-                        # 添加约束：如果 candidate 未被选择，禁止目标部件
-                        self.model.addConstr(
-                            gp.quicksum(allowed_vars) <= candidate_var,
-                            name=f"dependency_{part}_{candidate}_disables_{slot}"
-                        )
+                        if total_dependencies > 1:
+                            #print("------>", part, candidate, slot, item, total_dependencies)
+                            # 如果 slot_var 受多个部件影响，使用 Big-M 方法
+                            self.model.addConstr(
+                                slot_var <= candidate_var + M * (1 - candidate_var),
+                                name=f"bigM_dependency_{part}_{candidate}_enables_{slot}_{item}"
+                            )
+                        else:
+                            # 如果 slot_var 仅受一个部件影响，使用直接闭合约束
+                            self.model.addConstr(
+                                slot_var <= candidate_var,
+                                name=f"direct_dependency_{part}_{candidate}_controls_{slot}_{item}"
+                            )
+
+
+                       
+                        
                             
 
     def _apply_conflicts(self, conflicts):
+        """
+        Apply conflict rules using big-M constraints.
+        :param conflicts: A dictionary defining conflicts.
+                        If a key is selected, its associated parts cannot be selected.
+        """
+        M = 1e6  # A sufficiently large constant for the big-M method
         for part, conflict_parts in conflicts.items():
-            #print("=======================================")
-            #print(part, dependency)
-            for candidate, conflict_part in conflict_parts.items():
-                #print(candidate, conflict_part)
-                #be_selected = self.choices[part][candidate]
-                for slots in conflict_part:
-                    #print(slots)
-                    for item in self.weapon_data["parts"][slots].keys():
+            for candidate, conflict_slots in conflict_parts.items():
+                candidate_var = self.choices[part][candidate]
+
+                for slot in conflict_slots:
+                    for item in self.weapon_data["parts"][slot].keys():
+                        slot_var = self.choices[slot][item]
+
+                        # Add big-M constraints
+                        # When candidate_var = 1 (selected), slot_var must be 0 (conflict)
                         self.model.addConstr(
-                            self.choices[slots][item] <= 1 - self.choices[part][candidate]
+                            slot_var <= M * (1 - candidate_var),
+                            name=f"bigM_conflict_{part}_{candidate}_disables_{slot}_{item}"
                         )
-                #     if command == "allowed":
-                #         for slot in slots:
-                #             self.model.addConstr(sum(self.choices[slot][item] for item in self.weapon_data["parts"][slot]) <= be_selected )
-            #print("---------------------------------------")
 
 
     def set_objective(self, weights):
@@ -136,6 +145,9 @@ class Optimizer:
             for part, items in self.choices.items()
         }
         final_attributes = {key: self.total_attributes[key].getValue() for key in self.attribute_keys}
+
+        #self.model.write("model_debug.lp")
+
 
         return {
             "parts": {k: v[0] if v else None for k, v in selected_parts.items()},
