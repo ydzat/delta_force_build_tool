@@ -2,7 +2,7 @@
 Author: @ydzat
 Date: 2024-12-13 23:16:20
 LastEditors: @ydzat
-LastEditTime: 2024-12-14 17:01:31
+LastEditTime: 2024-12-15 20:31:05
 Description: 
 '''
 from data_manager import DataManager
@@ -16,20 +16,20 @@ def main():
     data_manager.load_rules()
 
     # Initialize optimizer
-    weapon_type = "rifle"
-    weapon_name = "car15"
+    weapon_type = "smg"
+    weapon_name = "uzi"
 
     optimizer = Optimizer(data_manager, weapon_type, weapon_name)
     optimizer.setup_model()
 
     # 添加用户指定的约束
     optimizer.add_constraints([
-        {"attribute": "mag", "operator": "=", "value": "m4_45"},
+        {"attribute": "mag", "operator": "=", "value": "uzi_45"},
         {"attribute": "Handling", "operator": ">=", "value": 50},
         {"attribute": "Stability", "operator": ">=", "value": 50},
         #{"attribute": "rear_grip", "operator": "=", "value": "invasion_rear_grip"}
         #{"attribute": "rear_grip", "operator": "=", "value": "ar_heavy_tower_grip"}
-        {"attribute": "barrel", "operator": "=", "value": "ar_specops_integrally_suppressed_combo"}
+        #{"attribute": "barrel", "operator": "=", "value": "ar_specops_integrally_suppressed_combo"}
 
     ])
 
@@ -40,12 +40,12 @@ def main():
     weights = {
         'Damage': 0.5,
         'Range': 0.5,
-        'Control': 2,
+        'Control': 1.5,
         'Handling': 1.5,
         'Stability': 1.5,
         'Accuracy': 1,
         'fire_rate': 1,
-        'capacity': 1.25,
+        'capacity': 2,
         'muzzle_velocity': 1
     }
     optimizer.set_objective(weights)

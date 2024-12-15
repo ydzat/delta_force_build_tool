@@ -2,7 +2,7 @@
  * @Author: @ydzat
  * @Date: 2024-12-13 17:21:20
  * @LastEditors: @ydzat
- * @LastEditTime: 2024-12-14 17:16:48
+ * @LastEditTime: 2024-12-15 20:35:54
  * @Description: 
 -->
 # Delta Force loadout tool
@@ -11,6 +11,16 @@ Automatically calculate the best loadout. (Just now only for battlefield)
 # require
 python 3
 gurobi
+
+# current support guns
+### Pistol
+    g18
+### SMG
+    uzi
+### Rifle
+    car15
+
+
 
 # how to use
 You can manually modify the weights in `main.py`

@@ -13,7 +13,12 @@
                     "ar_heavy_tower_grip":["grip_mount"]
                 },
                 "optic": {
-                    "multi_purpose_tactical_riser":["riser_optic", "tactical_device"]
+                    "multi_purpose_tactical_riser":["riser_optic", "tactical_device"],
+                    "lpvo_scope":["killflash"],
+                    "recon_1.5/5_adjustable_scope":["killflash"],
+                    "3/7_adjustable_scope":["killflash", "top_mounted_sight"],
+                    "m157_fire_control_optical_system":["killflash" ],
+                    "insight_3/7_sniper_scope":["killflash"]
                 }
             },
             "conflicts": {
@@ -33,6 +38,27 @@
                     "restricted_zone_integral_stock": ["stock", "rear_grip"]
                 }
             }
+        }
+    },
+    "smg": {
+        "uzi": {
+            "dependencies": {
+                "optic": {
+                    "multi_purpose_tactical_riser":["riser_optic", "tactical_device"],
+                    "lpvo_scope":["killflash"],
+                    "recon_1.5/5_adjustable_scope":["killflash"],
+                    "3/7_adjustable_scope":["killflash", "top_mounted_sight"],
+                    "m157_fire_control_optical_system":["killflash" ],
+                    "insight_3/7_sniper_scope":["killflash"]
+                }
+            },
+            "conflicts":{
+                "handguard": {
+                    "uzi_performance_handguard": ["foregrip", "left_rail", "right_rail"]
+
+                }
+            }
+
         }
     }
 }
