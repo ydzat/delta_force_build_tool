@@ -19,6 +19,7 @@ class Optimizer:
         self.choices = {}
         self.total_attributes = {}
         self.attribute_keys = list(self.weapon_data["attributes"].keys())
+        self.normalized_attributes = {}
 
     def setup_model(self):
         """Setup the optimization model with variables and constraints."""
@@ -31,13 +32,10 @@ class Optimizer:
                 self.choices[part][item] = self.model.addVar(vtype=GRB.BINARY, name=f"{part}_{item}")
 
         # Each part can have at most one attachment selected
-        # for part, items in self.choices.items():
-        #     self.model.addConstr(gp.quicksum(items.values()) <= 1, name=f"choose_one_{part}")
         for part, items in parts.items():
             self.model.addConstr(
                 sum(self.choices[part][item] for item in items) <= 1, name=f"choose_one_{part}"
             )
-
 
         # Initialize total attributes with base values
         self.total_attributes = {
@@ -49,6 +47,29 @@ class Optimizer:
             for item, effects in items.items():
                 for i, key in enumerate(self.attribute_keys):
                     self.total_attributes[key] += self.choices[part][item] * effects[i]
+
+    def normalize_attributes(self):
+        """Normalize attributes to ensure consistent weighting."""
+        normalized_attributes = {}
+        for key in self.attribute_keys:
+            values = [
+                self.weapon_data["attributes"][key]
+            ]  # Start with base attribute values
+
+            # Include contributions from parts
+            for part, items in self.weapon_data["parts"].items():
+                for item, effects in items.items():
+                    values.append(effects[self.attribute_keys.index(key)])  # Add effect value
+            
+            min_val = min(values)
+            max_val = max(values)
+
+            # Avoid division by zero
+            range_val = max_val - min_val if max_val != min_val else 1
+            
+            normalized_attributes[key] = (self.total_attributes[key] - min_val) / range_val
+
+        self.normalized_attributes = normalized_attributes
 
     def apply_rules(self):
         """Apply dependency, conflict, and default disabled rules to the model."""
@@ -66,40 +87,31 @@ class Optimizer:
         M = 1e6  # Big-M constant
 
         for part, dependency in dependencies.items():
-            # 遍历当前部件的所有依赖配件
             for candidate, allowed_slots in dependency.items():
-                candidate_var = self.choices[part][candidate]  # 当前部件的二进制变量
+                candidate_var = self.choices[part][candidate]  # Current part variable
 
                 for slot in allowed_slots:
-                    # 检查该 slot 是否仅受此 candidate 的影响
                     total_dependencies = sum(1 for c in dependency.values() if slot in c)
-                    print("total_dependencies", total_dependencies)
 
                     for item in self.weapon_data["parts"][slot].keys():
-                        slot_var = self.choices[slot][item]  # 目标部件的二进制变量
+                        slot_var = self.choices[slot][item]
 
                         if total_dependencies > 1:
-                            #print("------>", part, candidate, slot, item, total_dependencies)
-                            # 如果 slot_var 受多个部件影响，使用 Big-M 方法
+                            # Use Big-M for multiple dependencies
                             self.model.addConstr(
                                 slot_var <= candidate_var + M * (1 - candidate_var),
                                 name=f"bigM_dependency_{part}_{candidate}_enables_{slot}_{item}"
                             )
                         else:
-                            # 如果 slot_var 仅受一个部件影响，使用直接闭合约束
+                            # Direct constraints for single dependencies
                             self.model.addConstr(
                                 slot_var <= candidate_var,
                                 name=f"direct_dependency_{part}_{candidate}_controls_{slot}_{item}"
                             )
 
-
-                       
-                        
-                            
-
     def _apply_conflicts(self, conflicts):
         """
-        Apply conflict rules using big-M constraints.
+        Apply conflict rules using Big-M constraints.
         :param conflicts: A dictionary defining conflicts.
                         If a key is selected, its associated parts cannot be selected.
         """
@@ -112,20 +124,21 @@ class Optimizer:
                     for item in self.weapon_data["parts"][slot].keys():
                         slot_var = self.choices[slot][item]
 
-                        # Add big-M constraints
-                        # When candidate_var = 1 (selected), slot_var must be 0 (conflict)
+                        # Add Big-M constraints
                         self.model.addConstr(
                             slot_var <= M * (1 - candidate_var),
                             name=f"bigM_conflict_{part}_{candidate}_disables_{slot}_{item}"
                         )
-
 
     def set_objective(self, weights):
         """
         Set the objective function for optimization.
         :param weights: A dictionary with attributes as keys and weights as values.
         """
-        objective = gp.quicksum(weights[key] * self.total_attributes[key] for key in self.attribute_keys)
+        self.normalize_attributes()  # Normalize attributes before setting objective
+        objective = gp.quicksum(
+            weights[key] * self.normalized_attributes[key] for key in self.attribute_keys
+        )
         self.model.setObjective(objective, GRB.MAXIMIZE)
 
     def optimize(self):
@@ -146,9 +159,6 @@ class Optimizer:
         }
         final_attributes = {key: self.total_attributes[key].getValue() for key in self.attribute_keys}
 
-        #self.model.write("model_debug.lp")
-
-
         return {
             "parts": {k: v[0] if v else None for k, v in selected_parts.items()},
             "attributes": final_attributes,
@@ -168,7 +178,6 @@ class Optimizer:
             operator = constraint["operator"]
             value = constraint["value"]
 
-            # Check if the constraint is related to a specific part (e.g., mag)
             if attribute in self.choices:
                 for item in self.choices[attribute]:
                     if item == value:
