@@ -2,14 +2,17 @@
  * @Author: @ydzat
  * @Date: 2024-12-13 17:21:20
  * @LastEditors: @ydzat
- * @LastEditTime: 2024-12-16 02:03:13
+ * @LastEditTime: 2024-12-16 02:27:01
  * @Description: 
 -->
 # Delta Force (International Server) loadout tool
 Automatically calculate the best loadout. (Just now only for battlefield)
 
+Considering that not everyone has gurobi, the author is considering replacing the solver used with an open source one in the near future.
+
 # require
 python 3
+
 gurobi
 
 # current support guns
