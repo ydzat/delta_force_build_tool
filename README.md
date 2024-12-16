@@ -2,10 +2,10 @@
  * @Author: @ydzat
  * @Date: 2024-12-13 17:21:20
  * @LastEditors: @ydzat
- * @LastEditTime: 2024-12-15 20:35:54
+ * @LastEditTime: 2024-12-16 02:03:13
  * @Description: 
 -->
-# Delta Force loadout tool
+# Delta Force (International Server) loadout tool
 Automatically calculate the best loadout. (Just now only for battlefield)
 
 # require
@@ -13,13 +13,17 @@ python 3
 gurobi
 
 # current support guns
+```
 ### Pistol
     g18
 ### SMG
     uzi
+    bizon
+    smg45
+    vector
 ### Rifle
     car15
-
+```
 
 
 # how to use

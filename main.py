@@ -2,7 +2,7 @@
 Author: @ydzat
 Date: 2024-12-13 23:16:20
 LastEditors: @ydzat
-LastEditTime: 2024-12-15 20:31:05
+LastEditTime: 2024-12-16 01:56:33
 Description: 
 '''
 from data_manager import DataManager
@@ -17,14 +17,14 @@ def main():
 
     # Initialize optimizer
     weapon_type = "smg"
-    weapon_name = "uzi"
+    weapon_name = "vector"
 
     optimizer = Optimizer(data_manager, weapon_type, weapon_name)
     optimizer.setup_model()
 
     # 添加用户指定的约束
     optimizer.add_constraints([
-        {"attribute": "mag", "operator": "=", "value": "uzi_45"},
+        #{"attribute": "mag", "operator": "=", "value": "uzi_45"},
         {"attribute": "Handling", "operator": ">=", "value": 50},
         {"attribute": "Stability", "operator": ">=", "value": 50},
         #{"attribute": "rear_grip", "operator": "=", "value": "invasion_rear_grip"}
