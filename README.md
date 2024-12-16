@@ -2,20 +2,25 @@
  * @Author: @ydzat
  * @Date: 2024-12-13 17:21:20
  * @LastEditors: @ydzat
- * @LastEditTime: 2024-12-16 02:27:01
+ * @LastEditTime: 2024-12-16 02:50:03
  * @Description: 
 -->
 # Delta Force (International Server) loadout tool
 Automatically calculate the best loadout. (Just now only for battlefield)
 
-Considering that not everyone has gurobi, the author is considering replacing the solver used with an open source one in the near future.
+The solver was changed from gurobi to pulp, but the old gurobi files are still retained.
 
-# require
+For general users, please use `main_cbc.py` to perform calculations.
+
+# Require
+
 python 3
 
-gurobi
+~~gurobi~~
 
-# current support guns
+PuLP
+
+# Current support guns
 ```
 ### Pistol
     g18
@@ -29,11 +34,17 @@ gurobi
 ```
 
 
-# how to use
-You can manually modify the weights in `main.py`
+# How to use
+You can manually modify the weights in `main_cbc.py`
+
+
+
 
 run:
-`python main.py`
+```
+pip install pulp
+python main_cbc.py
+```
 
 If you want to customize the requirements, make the following changes in `main.py`:
 
