@@ -2,7 +2,7 @@
  * @Author: @ydzat
  * @Date: 2024-12-13 17:21:20
  * @LastEditors: @ydzat
- * @LastEditTime: 2024-12-16 02:50:03
+ * @LastEditTime: 2024-12-17 14:50:57
  * @Description: 
 -->
 # Delta Force (International Server) loadout tool
@@ -22,14 +22,18 @@ PuLP
 
 # Current support guns
 ```
-### Pistol
+### pistol
     g18
-### SMG
+### smg
     uzi
     bizon
     smg45
     vector
-### Rifle
+    vityaz
+    mp5
+    p90
+    sr_3m
+### rifle
     car15
 ```
 
