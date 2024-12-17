@@ -237,6 +237,9 @@
                 },
                 "barrel":{
                     "sr_3m_cast_steel_tactical_barrel": ["foregrip", "upper_rail2", "left_rail2", "right_rail2", "left_patch", "right_patch"]
+                },
+                "rear_grip":{
+                    "ar_heavy_tower_grip":["grip_mount"]
                 }
             },
             "conflicts":{
