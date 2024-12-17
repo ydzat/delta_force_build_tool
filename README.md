@@ -2,7 +2,7 @@
  * @Author: @ydzat
  * @Date: 2024-12-13 17:21:20
  * @LastEditors: @ydzat
- * @LastEditTime: 2024-12-17 19:35:06
+ * @LastEditTime: 2024-12-17 22:37:13
  * @Description: 
 -->
 # Delta Force (International Server) loadout tool
@@ -41,7 +41,11 @@ PuLP
     akm
     ak12
     m16a4
-    as_val (Data entry in progress...)
+    as_val
+    aks74
+    sg552
+    m4a1
+    ci19
 ```
 
 

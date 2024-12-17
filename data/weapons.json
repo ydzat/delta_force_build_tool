@@ -1267,7 +1267,957 @@
                 "muzzle_velocity": 330
             },
             "parts":{
-                
+                "optic":{
+                    "HAMR_Combined_Scope": [0,0,0,-6,0,0,0,0,0],
+                    "1P-29_russian_3x_scope": [0,0,0,-4,0,0,0,0,0],
+                    "lpvo_scope": [0,0,0,-6,0,0,0,0,0],
+                    "viewpoint_3x_scope": [0,0,0,-4,0,0,0,0,0],
+                    "recon_1.5/5_adjustable_scope": [0,0,0,-8,3,0,0,0,0],
+                    "3/7_adjustable_scope": [0,0,0,-8,3,0,0,0,0],
+                    "m157_fire_control_optical_system": [0,0,0,-6,0,0,0,0,0],
+                    "insight_3/7_sniper_scope": [0,0,0,-8,0,0,0,0,0],
+                    "acog_precision_6x_scope": [0,0,0,-2,0,0,0,0,0],
+                    "osight_red_dot": [0,0,0,0,0,0,0,0,0],
+                    "cobra_accuracy_sight": [0,0,0,0,0,0,0,0,0],
+                    "okp_7_reflex_sight": [0,0,0,0,0,0,0,0,0],
+                    "xcog_assault_3.5x_scope": [0,0,0,-4,0,0,0,0,0],
+                    "combat_red_dot_sight": [0,0,0,0,0,0,0,0,0],
+                    "mini_red_dot_sight": [0,0,0,0,0,0,0,0,0],
+                    "xro_quick_response_sight": [0,0,0,0,0,0,0,0,0],
+                    "panoramic_red_dot_sight": [0,0,0,0,0,0,0,0,0],
+                    "multi_purpose_tactical_riser": [0,0,-1,1,0,0,0,0,0],
+                    "micro_sight_riser": [0,0,-1,1,0,0,0,0,0],
+                    "ap5000_reflex_sight": [0,0,0,0,0,0,0,0,0],
+                    "holographic_sight_type_ii": [0,0,0,0,0,0,0,0,0],
+                    "reflex_sight": [0,0,0,0,0,0,0,0,0],
+                    "russian_accuracy_2x_scope": [0,0,0,0,0,0,0,0,0],
+                    "holographic_sight": [0,0,0,0,0,0,0,0,0]
+                },
+                "offset_optic":{
+                    "offset_osight_red_dot": [0,0,0,-1,0,0,0,0,0],
+                    "offset_combat_red_dot_sight": [0,0,0,-1,0,0,0,0,0],
+                    "offset_mini_red_dot_sight": [0,0,0,-1,0,0,0,0,0],
+                    "offset_xro_quick_response_sight": [0,0,0,-1,0,0,0,0,0],
+                    "offset_panoramic_red_dot_sight": [0,0,0,-1,0,0,0,0,0]
+                },
+                "killflash":{
+                    "honeycomb_killflash": [0,0,0,-3,-3,0,0,0,0]
+                },
+                "tactical_device":{
+                    "laser-light_combo": [0,0,0,-4,0,0,0,0,0]
+                },
+                "riser_optic":{
+                    "* sight":[0,0,0,0,0,0,0,0,0],
+                    "micro_sight_riser":[0,0,-1,1,0,0,0,0,0]
+                },
+                "top_mounted_sight":{
+                    "osight_red_dot": [0,0,0,0,0,0,0,0,0],
+                    "combat_red_dot_sight": [0,0,0,0,0,0,0,0,0],
+                    "mini_red_dot_sight": [0,0,0,0,0,0,0,0,0],
+                    "xro_quick_response_sight": [0,0,0,0,0,0,0,0,0],
+                    "panoramic_red_dot_sight": [0,0,0,0,0,0,0,0,0]
+                },
+                "left_rail":{
+                    "flare_tactical_flashlight": [0,0,0,-1,0,0,0,0,0],
+                    "* laser-light combo": [0,0,0,-4,0,0,0,0,0],
+                    "olight_odin_s": [0,0,0,-1,0,0,0,0,0],
+                    "olight_baldr_pro_r_multi_function_flashlight": [0,0,0,-5,0,-8,0,0,0],
+                    "practical_weapon_light": [0,0,0,-1,0,0,0,0,0]
+                },
+                "right_rail":{
+                    "flare_tactical_flashlight": [0,0,0,-1,0,0,0,0,0],
+                    "* laser-light combo": [0,0,0,-4,0,0,0,0,0],
+                    "olight_baldr_pro_r_multi_function_flashlight": [0,0,0,-5,0,-8,0,0,0],
+                    "olight_odin_s": [0,0,0,-1,0,0,0,0,0],
+                    "olight_warrior_3s": [0,0,0,-4,-4,0,0,0,0],
+                    "practical_weapon_light": [0,0,0,-1,0,0,0,0,0]
+                },
+                "upper_rail":{
+                    "flare_tactical_flashlight": [0,0,0,-1,0,0,0,0,0],
+                    "* laser-light combo": [0,0,0,-4,0,0,0,0,0],
+                    "olight_odin_s": [0,0,0,-1,0,0,0,0,0],
+                    "olight_baldr_pro_r_multi_function_flashlight": [0,0,0,-5,0,-8,0,0,0],
+                    "practical_weapon_light": [0,0,0,-1,0,0,0,0,0]
+                },
+                "left_rail2":{
+                    "flare_tactical_flashlight": [0,0,0,-1,0,0,0,0,0],
+                    "* laser-light combo": [0,0,0,-4,0,0,0,0,0],
+                    "olight_odin_s": [0,0,0,-1,0,0,0,0,0],
+                    "olight_baldr_pro_r_multi_function_flashlight": [0,0,0,-5,0,-8,0,0,0],
+                    "practical_weapon_light": [0,0,0,-1,0,0,0,0,0],
+                    "modular_handguard_panel": [0,0,1,-2,1,0,0,0,0],
+                    "hornet_handguard": [0,0,0,0,0,4,0,0,0],
+                    "dd_python_handguard": [0,0,0,1,0,0,0,0,0],
+                    "kc_hound_handguard": [0,0,0,0,1,0,0,0,0],
+                    "ranger_handguard": [0,0,1,0,0,0,0,0,0]
+                },
+                "right_rail2":{
+                    "flare_tactical_flashlight": [0,0,0,-1,0,0,0,0,0],
+                    "* laser-light combo": [0,0,0,-4,0,0,0,0,0],
+                    "olight_baldr_pro_r_multi_function_flashlight": [0,0,0,-5,0,-8,0,0,0],
+                    "olight_odin_s": [0,0,0,-1,0,0,0,0,0],
+                    "olight_warrior_3s": [0,0,0,-4,-4,0,0,0,0],
+                    "practical_weapon_light": [0,0,0,-1,0,0,0,0,0],
+                    "modular_handguard_panel": [0,0,1,-2,1,0,0,0,0],
+                    "hornet_handguard": [0,0,0,0,0,4,0,0,0],
+                    "dd_python_handguard": [0,0,0,1,0,0,0,0,0],
+                    "kc_hound_handguard": [0,0,0,0,1,0,0,0,0],
+                    "ranger_handguard": [0,0,1,0,0,0,0,0,0]
+                },
+                "foregrip2":{
+                    "mini_hand_stop": [0,0,0,2,0,8,0,0,0],
+                    "practical_vertical_foregrip": [0,0,4,0,0,0,0,0,0],
+                    "zfsg_tactical_grip": [0,0,1,0,0,12,0,0,0],
+                    "vfg_knight_foregrip": [0,0,0,4,0,0,0,0,0],
+                    "folding_grip": [0,0,0,1,5,0,0,0,0],
+                    "rk_0_foregrip": [0,0,6,0,0,0,0,0,0],
+                    "k1_elite_bevel_foregrip": [0,0,6,0,0,0,0,0,0],
+                    "resonant_ergonomic_grip": [0,0,7,-1,0,0,0,0,0],
+                    "competition_hand_stop": [0,0,-2,5,0,12,0,0,0],
+                    "phase_combat_foregrip": [0,0,3,2,1,0,0,0,0],
+                    "tactical_vertical_foregrip": [0,0,0,6,0,0,0,0,0],
+                    "x25u_angled_combat_grip": [0,0,10,-3,-3,8,0,0,0],
+                    "collapsible_bipod_grip": [0,0,0,1,0,-12,0,0,0],
+                    "cr_prism_hand_stop": [0,0,6,0,0,0,0,0,0],
+                    "angled_hand_stop": [0,0,-2,8,0,0,0,0,0],
+                    "secret_order_bevel_foregrip": [0,0,7,-1,0,0,0,0,0],
+                    "phantom_vertical_foregrip": [0,0,0,8,-2,0,0,0,0],
+                    "daybreak_vertical_flashlight_grip": [0,0,6,-7,2,0,0,0,0],
+                    "dawn_angled_flashlight_grip": [0,0,8,-5,-2,0,0,0,0],
+                    "tactical_angled_foregrip": [0,0,4,2,0,0,0,0,0],
+                    "resonant_mkii_foregrip": [0,0,4,4,-2,0,0,0,0] 
+                },
+                "barrel":{
+                    "vss_tsunami_long_barrel_combo": [0,2,9,0,0,0,0,0,30]
+                },
+                "stock":{
+                    "practical_light": [0,0,0,4,0,0,0,0,0],
+                    "practical_tactical": [0,0,4,0,0,0,0,0,0],
+                    "practical_stable": [0,0,2,0,2,0,0,0,0],
+                    "core_rail_stock": [0,0,3,3,0,0,0,0,0],
+                    "elite_light": [0,0,3,3,0,0,0,0,0],
+                    "416_stable": [0,0,4,-6,8,0,0,0,0],
+                    "invasion_core": [0,0,6,0,0,0,0,0,0],
+                    "416_light": [0,0,6,6,-6,0,0,0,0],
+                    "cardinal_stable": [0,0,6,0,0,0,0,0,0],
+                    "candinal_advanced_combat_stock": [0,0,3,2,1,0,0,0,0],
+                    "skeleton_sniper": [0,0,-4,8,6,-16,0,0,0],
+                    "vss_elite_integral_stock": [0,0,14,-2,0,-8,0,0,0],
+                    "lightning_rail_stock": [0,0,0,12,-6,0,0,0,0],
+                    "ur_spec_ops_tactical": [0,0,6,-4,4,0,0,0,0],
+                    "mrgs_skeleton_stock": [0,0,0,2,4,-8,0,0,0],
+                    "shadow_buffer_tube": [0,0,2,10,-6,0,0,0,0],
+                    "shadow_rail_stock": [0,0,4,6,-4,0,0,0,0],
+                    "as_val_bolt_cover": [0,0,-7,12,-4,12,0,0,0]
+                },
+                "mag":{
+                    "vss_30": [0,0,0,-4,0,0,0,15,0],
+                    "vss_45": [0,0,-3,-5,-2,0,0,30,0]
+                },
+                "mag_mount":{
+                    "coyote": [0,0,0,1,0,0,0,0,0]
+                },
+                "rail_bipod":{
+                    "practical_bipod": [0,0,0,-4,0,0,0,0,0]
+                }
+            }
+        },
+        "aks74":{
+            "attributes":{
+                "Damage": 27,
+                "Range": 30,
+                "Control": 35,
+                "Handling": 60,
+                "Stability": 53,
+                "Accuracy": 52,
+                "fire_rate": 533,
+                "capacity": 20,
+                "muzzle_velocity": 500
+            },
+            "parts":{
+                "optic":{
+                    "HAMR_Combined_Scope": [0,0,0,-6,0,0,0,0,0],
+                    "1P-29_russian_3x_scope": [0,0,0,-4,0,0,0,0,0],
+                    "lpvo_scope": [0,0,0,-6,0,0,0,0,0],
+                    "viewpoint_3x_scope": [0,0,0,-4,0,0,0,0,0],
+                    "recon_1.5/5_adjustable_scope": [0,0,0,-8,3,0,0,0,0],
+                    "3/7_adjustable_scope": [0,0,0,-8,3,0,0,0,0],
+                    "m157_fire_control_optical_system": [0,0,0,-6,0,0,0,0,0],
+                    "insight_3/7_sniper_scope": [0,0,0,-8,0,0,0,0,0],
+                    "acog_precision_6x_scope": [0,0,0,-2,0,0,0,0,0],
+                    "osight_red_dot": [0,0,0,0,0,0,0,0,0],
+                    "cobra_accuracy_sight": [0,0,0,0,0,0,0,0,0],
+                    "okp_7_reflex_sight": [0,0,0,0,0,0,0,0,0],
+                    "xcog_assault_3.5x_scope": [0,0,0,-4,0,0,0,0,0],
+                    "combat_red_dot_sight": [0,0,0,0,0,0,0,0,0],
+                    "mini_red_dot_sight": [0,0,0,0,0,0,0,0,0],
+                    "xro_quick_response_sight": [0,0,0,0,0,0,0,0,0],
+                    "panoramic_red_dot_sight": [0,0,0,0,0,0,0,0,0],
+                    "multi_purpose_tactical_riser": [0,0,-1,1,0,0,0,0,0],
+                    "micro_sight_riser": [0,0,-1,1,0,0,0,0,0],
+                    "ap5000_reflex_sight": [0,0,0,0,0,0,0,0,0],
+                    "holographic_sight_type_ii": [0,0,0,0,0,0,0,0,0],
+                    "reflex_sight": [0,0,0,0,0,0,0,0,0],
+                    "russian_accuracy_2x_scope": [0,0,0,0,0,0,0,0,0],
+                    "holographic_sight": [0,0,0,0,0,0,0,0,0]
+                },
+                "offset_optic":{
+                    "offset_osight_red_dot": [0,0,0,-1,0,0,0,0,0],
+                    "offset_combat_red_dot_sight": [0,0,0,-1,0,0,0,0,0],
+                    "offset_mini_red_dot_sight": [0,0,0,-1,0,0,0,0,0],
+                    "offset_xro_quick_response_sight": [0,0,0,-1,0,0,0,0,0],
+                    "offset_panoramic_red_dot_sight": [0,0,0,-1,0,0,0,0,0]
+                },
+                "killflash":{
+                    "honeycomb_killflash": [0,0,0,-3,-3,0,0,0,0]
+                },
+                "tactical_device":{
+                    "laser-light_combo": [0,0,0,-4,0,0,0,0,0]
+                },
+                "riser_optic":{
+                    "* sight":[0,0,0,0,0,0,0,0,0],
+                    "micro_sight_riser":[0,0,-1,1,0,0,0,0,0]
+                },
+                "top_mounted_sight":{
+                    "osight_red_dot": [0,0,0,0,0,0,0,0,0],
+                    "combat_red_dot_sight": [0,0,0,0,0,0,0,0,0],
+                    "mini_red_dot_sight": [0,0,0,0,0,0,0,0,0],
+                    "xro_quick_response_sight": [0,0,0,0,0,0,0,0,0],
+                    "panoramic_red_dot_sight": [0,0,0,0,0,0,0,0,0]
+                },
+                "foregrip":{
+                    "vfg_knight_foregrip": [0,0,0,4,0,0,0,0,0],
+                    "mini_hand_stop":[0,0,0,2,0,8,0,0,0],
+                    "practical_vertical_foregrip":[0,0,4,0,0,0,0,0,0],
+                    "folding_grip":[0,0,0,1,5,0,0,0,0],
+                    "rk_0_foregrip": [0,0,6,0,0,0,0,0,0],
+                    "phase_combat_foregrip":[0,0,3,2,1,0,0,0,0],
+                    "tactical_vertical_foregrip":[0,0,0,6,0,0,0,0,0],
+                    "x25u_angled_combat_grip":[0,0,10,-3,-3,8,0,0,0],
+                    "cr_prism_hand_stop":[0,0,6,0,0,0,0,0,0],
+                    "angled_hand_stop":[0,0,-2,8,0,0,0,0,0],
+                    "phantom_vertical_foregrip": [0,0,0,8,-2,0,0,0,0],
+                    "collapsible_bipod_grip":[0,0,0,1,0,-12,0,0,0]
+                },
+                "muzzle":{
+                    "ak_practical_compensator": [0,0,7,0,-2,0,0,0,0],
+                    "steel_muzzle_brake": [0,0,6,0,-1,0,0,0,0],
+                    "practical_suppressor": [0,0,0,0,0,0,0,0,0],
+                    "bell_mouth_flash_hider": [0,0,3,0,1,0,0,0,0],
+                    "practical_flash_hider": [0,0,2,0,2,0,0,0,0],
+                    "poseidon_flash_hider": [0,0,6,-1,0,0,0,0,0],
+                    "sandstorm_vertical_compensator": [0,0,9,-2,0,0,0,0,0],
+                    "pbs_russian_suppressor": [0,0,10,-8,0,0,0,0,0],
+                    "ak_bravefire_suppressor": [0,1,0,-6,7,-8,0,0,45],
+                    "bastion_horizontal_compensator": [0,0,9,-2,0,0,0,0,0],
+                    "slient_suppressor": [0,4,6,-8,-4,0,-8,0,60],
+                    "dtk_muzzle_brake": [0,0,6,0,0,4,0,0,0],
+                    "blazing_fire_suppessor": [0,0,6,-1,0,0,0,0,0],
+                    "whisper_tactical_suppressor": [0,3,5,-3,-3,0,0,0,45],
+                    "titanium_contest_muzzle_brake": [0,0,9,-2,0,0,0,0,0],
+                    "m7_practical_suppressor": [0,0,8,-6,0,0,0,0,0],
+                    "advanced_multi_caliber_suppressor": [0,0,5,-3,0,0,0,0,0],
+                    "spiral_fire_flash_hider": [0,0,4,0,1,0,0,0,0]
+                },
+                "handguard":{
+                    "aks74_lower_rail_handguard": [0,0,2,2,1,4,0,0,0]
+                },
+                "right_rail":{
+                    "flare_tactical_flashlight": [0,0,0,-1,0,0,0,0,0],
+                    "* laser-light combo": [0,0,0,-4,0,0,0,0,0],
+                    "olight_baldr_pro_r_multi_function_flashlight": [0,0,0,-5,0,-8,0,0,0],
+                    "olight_odin_s": [0,0,0,-1,0,0,0,0,0],
+                    "olight_warrior_3s": [0,0,0,-4,-4,0,0,0,0],
+                    "practical_weapon_light": [0,0,0,-1,0,0,0,0,0]
+                },
+                "upper_rail":{
+                    "flare_tactical_flashlight": [0,0,0,-1,0,0,0,0,0],
+                    "* laser-light combo": [0,0,0,-4,0,0,0,0,0],
+                    "olight_baldr_pro_r_multi_function_flashlight": [0,0,0,-5,0,-8,0,0,0],
+                    "olight_odin_s": [0,0,0,-1,0,0,0,0,0],
+                    "olight_warrior_3s": [0,0,0,-4,-4,0,0,0,0],
+                    "practical_weapon_light": [0,0,0,-1,0,0,0,0,0]
+                },
+                "left_rail":{
+                    "flare_tactical_flashlight": [0,0,0,-1,0,0,0,0,0],
+                    "* laser-light combo": [0,0,0,-4,0,0,0,0,0],
+                    "olight_baldr_pro_r_multi_function_flashlight": [0,0,0,-5,0,-8,0,0,0],
+                    "olight_odin_s": [0,0,0,-1,0,0,0,0,0],
+                    "olight_warrior_3s": [0,0,0,-4,-4,0,0,0,0],
+                    "practical_weapon_light": [0,0,0,-1,0,0,0,0,0]
+                },
+                "upper_handguard":{
+                    "aks74_upper_rail_handguard": [0,0,2,2,1,4,0,0,0]
+                },
+                "stock":{
+                    "pt3_sacrifice_stock": [0,0,2,2,1,4,0,0,0],
+                    "ur_spec_ops_tactical": [0,0,6,-4,4,0,0,0,0],
+                    "mrgs_skeleton_stock": [0,0,0,2,4,-8,0,0,0],
+                    "shadow_buffer_tube": [0,0,2,10,-6,0,0,0,0],
+                    "pt1_spec_ops_stock": [0,0,6,4,-4,0,0,0,0],
+                    "shadow_rail_stock": [0,0,4,6,-4,0,0,0,0],
+                    "elite_light": [0,0,3,3,0,0,0,0,0],
+                    "416_stable": [0,0,4,-6,8,0,0,0,0],
+                    "invasion_core": [0,0,6,0,0,0,0,0,0],
+                    "416_light": [0,0,6,6,-6,0,0,0,0],
+                    "cardinal_stable": [0,0,6,0,0,0,0,0,0],
+                    "candinal_advanced_combat_stock": [0,0,3,2,1,0,0,0,0],
+                    "skeleton_sniper": [0,0,-4,8,6,-16,0,0,0],
+                    "ak_19_stock": [0,0,6,4,-2,-8,0,0,0],
+                    "lightning_rail_stock": [0,0,0,12,-6,0,0,0,0],
+                    "ak_polymer_stock": [0,0,1,1,1,4,0,0,0],
+                    "practical_light": [0,0,0,4,0,0,0,0,0],
+                    "practical_tactical": [0,0,4,0,0,0,0,0,0],
+                    "practical_stable": [0,0,2,0,2,0,0,0,0],
+                    "core_rail_stock": [0,0,3,3,0,0,0,0,0],
+                    "ak_skeleton_stock": [0,0,-1,8,-3,0,0,0,0],
+                    "ak_bolt_cover": [0,0,-7,12,-4,12,0,0,0]
+                },
+                "stock_pad":{
+                    "ak_stock_recoil_pad": [0,0,2,1,1,0,0,0,0]
+                },
+                "rear_grip":{
+                    "ak_heavy_tower_grip": [0,0,1,1,1,4,0,0,0],
+                    "scorpio_rear_grip": [0,0,6,0,0,0,0,0,0],
+                    "rk_3_rear_grip": [0,0,3,3,0,0,0,0,0],
+                    "ak_skeleton_foregrip": [0,0,3,7,-4,0,0,0,0],
+                    "ak_stable_rear_grip": [0,0,4,0,0,0,0,0,0],
+                    "ak_marksman_rear_grip": [0,0,0,0,4,0,0,0,0],
+                    "ak_practical_rear_grip": [0,0,0,2,2,0,0,0,0]
+                },
+                "grip_mount":{
+                    "stable_grip_base": [0,0,2,-5,7,0,0,0,0],
+                    "balanced_grip_base": [0,0,1,1,1,4,0,0,0]    
+                },
+                "mag":{
+                    "aks74_30": [0,0,0,-4,0,0,0,10,0],
+                    "aks74_45": [0,0,-3,-5,-2,0,0,25,0],
+                    "ak12_30": [0,0,0,6,0,0,0,10,0],
+                    "aks74_75": [0,0,-3,-12,-4,0,0,55,0]
+                },
+                "mag_mount":{
+                    "badger": [0,0,0,1,0,0,0,0,0]
+                }
+            }
+        },
+        "sg552":{
+            "attributes":{
+                "Damage": 19,
+                "Range": 40,
+                "Control": 46,
+                "Handling": 61,
+                "Stability": 52,
+                "Accuracy": 53,
+                "fire_rate": 906,
+                "capacity": 20,
+                "muzzle_velocity": 550
+            },
+            "parts":{
+                "optic":{
+                    "HAMR_Combined_Scope": [0,0,0,-6,0,0,0,0,0],
+                    "1P-29_russian_3x_scope": [0,0,0,-4,0,0,0,0,0],
+                    "lpvo_scope": [0,0,0,-6,0,0,0,0,0],
+                    "viewpoint_3x_scope": [0,0,0,-4,0,0,0,0,0],
+                    "recon_1.5/5_adjustable_scope": [0,0,0,-8,3,0,0,0,0],
+                    "3/7_adjustable_scope": [0,0,0,-8,3,0,0,0,0],
+                    "m157_fire_control_optical_system": [0,0,0,-6,0,0,0,0,0],
+                    "insight_3/7_sniper_scope": [0,0,0,-8,0,0,0,0,0],
+                    "acog_precision_6x_scope": [0,0,0,-2,0,0,0,0,0],
+                    "osight_red_dot": [0,0,0,0,0,0,0,0,0],
+                    "cobra_accuracy_sight": [0,0,0,0,0,0,0,0,0],
+                    "okp_7_reflex_sight": [0,0,0,0,0,0,0,0,0],
+                    "xcog_assault_3.5x_scope": [0,0,0,-4,0,0,0,0,0],
+                    "combat_red_dot_sight": [0,0,0,0,0,0,0,0,0],
+                    "mini_red_dot_sight": [0,0,0,0,0,0,0,0,0],
+                    "xro_quick_response_sight": [0,0,0,0,0,0,0,0,0],
+                    "panoramic_red_dot_sight": [0,0,0,0,0,0,0,0,0],
+                    "multi_purpose_tactical_riser": [0,0,-1,1,0,0,0,0,0],
+                    "micro_sight_riser": [0,0,-1,1,0,0,0,0,0],
+                    "ap5000_reflex_sight": [0,0,0,0,0,0,0,0,0],
+                    "holographic_sight_type_ii": [0,0,0,0,0,0,0,0,0],
+                    "reflex_sight": [0,0,0,0,0,0,0,0,0],
+                    "russian_accuracy_2x_scope": [0,0,0,0,0,0,0,0,0],
+                    "holographic_sight": [0,0,0,0,0,0,0,0,0]
+                },
+                "offset_optic":{
+                    "offset_osight_red_dot": [0,0,0,-1,0,0,0,0,0],
+                    "offset_combat_red_dot_sight": [0,0,0,-1,0,0,0,0,0],
+                    "offset_mini_red_dot_sight": [0,0,0,-1,0,0,0,0,0],
+                    "offset_xro_quick_response_sight": [0,0,0,-1,0,0,0,0,0],
+                    "offset_panoramic_red_dot_sight": [0,0,0,-1,0,0,0,0,0]
+                },
+                "killflash":{
+                    "honeycomb_killflash": [0,0,0,-3,-3,0,0,0,0]
+                },
+                "tactical_device":{
+                    "laser-light_combo": [0,0,0,-4,0,0,0,0,0]
+                },
+                "riser_optic":{
+                    "* sight":[0,0,0,0,0,0,0,0,0],
+                    "micro_sight_riser":[0,0,-1,1,0,0,0,0,0]
+                },
+                "top_mounted_sight":{
+                    "osight_red_dot": [0,0,0,0,0,0,0,0,0],
+                    "combat_red_dot_sight": [0,0,0,0,0,0,0,0,0],
+                    "mini_red_dot_sight": [0,0,0,0,0,0,0,0,0],
+                    "xro_quick_response_sight": [0,0,0,0,0,0,0,0,0],
+                    "panoramic_red_dot_sight": [0,0,0,0,0,0,0,0,0]
+                },
+                "foregrip2":{
+                    "mini_hand_stop": [0,0,0,2,0,8,0,0,0],
+                    "practical_vertical_foregrip": [0,0,4,0,0,0,0,0,0],
+                    "zfsg_tactical_grip": [0,0,1,0,0,12,0,0,0],
+                    "vfg_knight_foregrip": [0,0,0,4,0,0,0,0,0],
+                    "folding_grip": [0,0,0,1,5,0,0,0,0],
+                    "rk_0_foregrip": [0,0,6,0,0,0,0,0,0],
+                    "k1_elite_bevel_foregrip": [0,0,6,0,0,0,0,0,0],
+                    "resonant_ergonomic_grip": [0,0,7,-1,0,0,0,0,0],
+                    "competition_hand_stop": [0,0,-2,5,0,12,0,0,0],
+                    "phase_combat_foregrip": [0,0,3,2,1,0,0,0,0],
+                    "tactical_vertical_foregrip": [0,0,0,6,0,0,0,0,0],
+                    "x25u_angled_combat_grip": [0,0,10,-3,-3,8,0,0,0],
+                    "collapsible_bipod_grip": [0,0,0,1,0,-12,0,0,0],
+                    "cr_prism_hand_stop": [0,0,6,0,0,0,0,0,0],
+                    "angled_hand_stop": [0,0,-2,8,0,0,0,0,0],
+                    "secret_order_bevel_foregrip": [0,0,7,-1,0,0,0,0,0],
+                    "phantom_vertical_foregrip": [0,0,0,8,-2,0,0,0,0],
+                    "daybreak_vertical_flashlight_grip": [0,0,6,-7,2,0,0,0,0],
+                    "dawn_angled_flashlight_grip": [0,0,8,-5,-2,0,0,0,0],
+                    "tactical_angled_foregrip": [0,0,4,2,0,0,0,0,0],
+                    "resonant_mkii_foregrip": [0,0,4,4,-2,0,0,0,0] 
+                },
+                "muzzle": {
+                    "poseidon_flash_hider": [0, 0, 6, -1, 0, 0, 0, 0, 0],
+                    "sandstorm_vertical_compensator": [0, 0, 9, -2, 0, 0, 0, 0, 0],
+                    "bastion_horizontal_compensator": [0, 0, 9, -2, 0, 0, 0, 0, 0],
+                    "slient_suppressor": [0, 4, 6, -8, -4, 0, -8, 0, 66],
+                    "blazing_fire_suppessor": [0, 0, 6, -1, 0, 0, 0, 0, 0],
+                    "whisper_tactical_suppressor": [0, 3, 5, -3, -3, 0, 0, 0, 50],
+                    "titanium_contest_muzzle_brake": [0, 0, 9, -2, 0, 0, 0, 0, 0],
+                    "m7_practical_suppressor": [0, 0, 8, -6, 0, 0, 0, 0, 0],
+                    "advanced_multi_caliber_suppressor": [0, 0, 5, -3, 0, 0, 0, 0, 0],
+                    "spiral_fire_flash_hider": [0, 0, 4, 0, 1, 0, 0, 0, 0],
+                    "steel_muzzle_brake": [0, 0, 6, 0, -1, 0, 0, 0, 0],
+                    "practical_suppressor": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+                    "ops_suppressor": [0, 0, 8, -5, -3, 0, 0, 0, 0],
+                    "birdcage_flash_hider": [0, 0, 3, 0, 1, 0, 0, 0, 0],
+                    "practical_flash_hider": [0, 0, 2, 0, 2, 0, 0, 0, 0]
+                },
+                "right_rail":{
+                    "flare_tactical_flashlight": [0,0,0,-1,0,0,0,0,0],
+                    "* laser-light combo": [0,0,0,-4,0,0,0,0,0],
+                    "olight_baldr_pro_r_multi_function_flashlight": [0,0,0,-5,0,-8,0,0,0],
+                    "olight_odin_s": [0,0,0,-1,0,0,0,0,0],
+                    "olight_warrior_3s": [0,0,0,-4,-4,0,0,0,0],
+                    "practical_weapon_light": [0,0,0,-1,0,0,0,0,0]
+                },
+                "barrel":{
+                    "sg552_knight_heavy_barrel": [0,2,5,0,0,0,0,0,33]
+                },
+                "right_rail2":{
+                    "flare_tactical_flashlight": [0,0,0,-1,0,0,0,0,0],
+                    "* laser-light combo": [0,0,0,-4,0,0,0,0,0],
+                    "olight_baldr_pro_r_multi_function_flashlight": [0,0,0,-5,0,-8,0,0,0],
+                    "olight_odin_s": [0,0,0,-1,0,0,0,0,0],
+                    "olight_warrior_3s": [0,0,0,-4,-4,0,0,0,0],
+                    "practical_weapon_light": [0,0,0,-1,0,0,0,0,0],
+                    "modular_handguard_panel": [0,0,1,-2,1,0,0,0,0],
+                    "hornet_handguard": [0,0,0,0,0,4,0,0,0],
+                    "dd_python_handguard": [0,0,0,1,0,0,0,0,0],
+                    "kc_hound_handguard": [0,0,0,0,1,0,0,0,0],
+                    "ranger_handguard": [0,0,1,0,0,0,0,0,0]
+                },
+                "left_rail2":{
+                    "flare_tactical_flashlight": [0,0,0,-1,0,0,0,0,0],
+                    "* laser-light combo": [0,0,0,-4,0,0,0,0,0],
+                    "olight_baldr_pro_r_multi_function_flashlight": [0,0,0,-5,0,-8,0,0,0],
+                    "olight_odin_s": [0,0,0,-1,0,0,0,0,0],
+                    "olight_warrior_3s": [0,0,0,-4,-4,0,0,0,0],
+                    "practical_weapon_light": [0,0,0,-1,0,0,0,0,0],
+                    "modular_handguard_panel": [0,0,1,-2,1,0,0,0,0],
+                    "hornet_handguard": [0,0,0,0,0,4,0,0,0],
+                    "dd_python_handguard": [0,0,0,1,0,0,0,0,0],
+                    "kc_hound_handguard": [0,0,0,0,1,0,0,0,0],
+                    "ranger_handguard": [0,0,1,0,0,0,0,0,0]
+                },
+                "upper_rail2":{
+                    "flare_tactical_flashlight": [0,0,0,-1,0,0,0,0,0],
+                    "* laser-light combo": [0,0,0,-4,0,0,0,0,0],
+                    "olight_baldr_pro_r_multi_function_flashlight": [0,0,0,-5,0,-8,0,0,0],
+                    "olight_odin_s": [0,0,0,-1,0,0,0,0,0],
+                    "olight_warrior_3s": [0,0,0,-4,-4,0,0,0,0],
+                    "practical_weapon_light": [0,0,0,-1,0,0,0,0,0],
+                    "modular_handguard_panel": [0,0,1,-2,1,0,0,0,0],
+                    "hornet_handguard": [0,0,0,0,0,4,0,0,0],
+                    "dd_python_handguard": [0,0,0,1,0,0,0,0,0],
+                    "kc_hound_handguard": [0,0,0,0,1,0,0,0,0],
+                    "ranger_handguard": [0,0,1,0,0,0,0,0,0]
+                },
+                "left_patch":{
+                    "modular_handguard_panel": [0,0,1,-2,1,0,0,0,0],
+                    "hornet_handguard": [0,0,0,0,0,4,0,0,0],
+                    "dd_python_handguard": [0,0,0,1,0,0,0,0,0],
+                    "kc_hound_handguard": [0,0,0,0,1,0,0,0,0],
+                    "ranger_handguard": [0,0,1,0,0,0,0,0,0]
+                },
+                "right_patch":{
+                    "modular_handguard_panel": [0,0,1,-2,1,0,0,0,0],
+                    "hornet_handguard": [0,0,0,0,0,4,0,0,0],
+                    "dd_python_handguard": [0,0,0,1,0,0,0,0,0],
+                    "kc_hound_handguard": [0,0,0,0,1,0,0,0,0],
+                    "ranger_handguard": [0,0,1,0,0,0,0,0,0]
+                },
+                "upper_patch":{
+                    "modular_handguard_panel": [0,0,1,-2,1,0,0,0,0],
+                    "hornet_handguard": [0,0,0,0,0,4,0,0,0],
+                    "dd_python_handguard": [0,0,0,1,0,0,0,0,0],
+                    "kc_hound_handguard": [0,0,0,0,1,0,0,0,0],
+                    "ranger_handguard": [0,0,1,0,0,0,0,0,0]
+                },
+                "rail_bipod":{
+                    "practical_bipod": [0,0,0,-4,0,0,0,0,0]
+                },
+                "stock": {
+                    "ur_spec_ops_tactical": [0, 0, 6, -4, 4, 0, 0, 0, 0],
+                    "shadow_buffer_tube": [0, 0, 2, 10, -6, 0, 0, 0, 0],
+                    "elite_light": [0, 0, 3, 3, 0, 0, 0, 0, 0],
+                    "416_stable": [0, 0, 4, -6, 8, 0, 0, 0, 0],
+                    "invasion_core": [0, 0, 6, 0, 0, 0, 0, 0, 0],
+                    "416_light": [0, 0, 6, 6, -6, 0, 0, 0, 0],
+                    "cardinal_stable": [0, 0, 6, 0, 0, 0, 0, 0, 0],
+                    "skeleton_sniper": [0, 0, -4, 8, 6, -16, 0, 0, 0],
+                    "practical_light": [0, 0, 0, 4, 0, 0, 0, 0, 0],
+                    "practical_tactical": [0, 0, 4, 0, 0, 0, 0, 0, 0],
+                    "practical_stable": [0, 0, 2, 0, 2, 0, 0, 0, 0],
+                    "sg552_bolt_cover": [0, 0, -7, 12, -4, 12, 0, 0, 0]
+                },
+                "rear_grip": {
+                    "ar_heavy_tower_grip": [0, 0, 1, 1, 1, 1, 0, 0, 0],
+                    "invasion_rear_grip": [0, 0, 3, 3, 0, 0, 0, 0, 0],
+                    "phantom_rear_grip": [0, 0, 3, 7, -4, 0, 0, 0, 0],
+                    "hurricane_d1_rear_grip": [0, 0, 0, 4, 0, 0, 0, 0, 0],
+                    "marksman_d2_rear_grip": [0, 0, 0, 0, 4, 0, 0, 0, 0],
+                    "m7_stable_rear_grip": [0, 0, 3, 1, 0, 0, 0, 0, 0],
+                    "416_practical_rear_grip": [0, 0, 0, 2, 2, 0, 0, 0, 0]
+                },
+                "grip_mount":{
+                    "stable_grip_base": [0,0,2,-5,7,0,0,0,0],
+                    "balanced_grip_base": [0,0,1,1,1,4,0,0,0]    
+                },
+                "mag":{
+                    "sg552_45": [0,0,-1,-5,-2,-8,0,25,0],
+                    "sg552_30": [0,0,0,0,0,0,0,10,0]
+                },
+                "mag_mount":{
+                    "badger": [0,0,0,1,0,0,0,0,0]
+                }
+            }
+        },
+        "m4a1":{
+            "attributes":{
+                "Damage": 20,
+                "Range": 30,
+                "Control": 41,
+                "Handling": 58,
+                "Stability": 55,
+                "Accuracy": 55,
+                "fire_rate": 800,
+                "capacity": 30,
+                "muzzle_velocity": 550
+            },
+            "parts":{
+                "optic":{
+                    "HAMR_Combined_Scope": [0,0,0,-6,0,0,0,0,0],
+                    "1P-29_russian_3x_scope": [0,0,0,-4,0,0,0,0,0],
+                    "lpvo_scope": [0,0,0,-6,0,0,0,0,0],
+                    "viewpoint_3x_scope": [0,0,0,-4,0,0,0,0,0],
+                    "recon_1.5/5_adjustable_scope": [0,0,0,-8,3,0,0,0,0],
+                    "3/7_adjustable_scope": [0,0,0,-8,3,0,0,0,0],
+                    "m157_fire_control_optical_system": [0,0,0,-6,0,0,0,0,0],
+                    "insight_3/7_sniper_scope": [0,0,0,-8,0,0,0,0,0],
+                    "acog_precision_6x_scope": [0,0,0,-2,0,0,0,0,0],
+                    "osight_red_dot": [0,0,0,0,0,0,0,0,0],
+                    "cobra_accuracy_sight": [0,0,0,0,0,0,0,0,0],
+                    "okp_7_reflex_sight": [0,0,0,0,0,0,0,0,0],
+                    "xcog_assault_3.5x_scope": [0,0,0,-4,0,0,0,0,0],
+                    "combat_red_dot_sight": [0,0,0,0,0,0,0,0,0],
+                    "mini_red_dot_sight": [0,0,0,0,0,0,0,0,0],
+                    "xro_quick_response_sight": [0,0,0,0,0,0,0,0,0],
+                    "panoramic_red_dot_sight": [0,0,0,0,0,0,0,0,0],
+                    "multi_purpose_tactical_riser": [0,0,-1,1,0,0,0,0,0],
+                    "micro_sight_riser": [0,0,-1,1,0,0,0,0,0],
+                    "ap5000_reflex_sight": [0,0,0,0,0,0,0,0,0],
+                    "holographic_sight_type_ii": [0,0,0,0,0,0,0,0,0],
+                    "reflex_sight": [0,0,0,0,0,0,0,0,0],
+                    "russian_accuracy_2x_scope": [0,0,0,0,0,0,0,0,0],
+                    "holographic_sight": [0,0,0,0,0,0,0,0,0]
+                },
+                "offset_optic":{
+                    "offset_osight_red_dot": [0,0,0,-1,0,0,0,0,0],
+                    "offset_combat_red_dot_sight": [0,0,0,-1,0,0,0,0,0],
+                    "offset_mini_red_dot_sight": [0,0,0,-1,0,0,0,0,0],
+                    "offset_xro_quick_response_sight": [0,0,0,-1,0,0,0,0,0],
+                    "offset_panoramic_red_dot_sight": [0,0,0,-1,0,0,0,0,0]
+                },
+                "killflash":{
+                    "honeycomb_killflash": [0,0,0,-3,-3,0,0,0,0]
+                },
+                "tactical_device":{
+                    "laser-light_combo": [0,0,0,-4,0,0,0,0,0]
+                },
+                "riser_optic":{
+                    "* sight":[0,0,0,0,0,0,0,0,0],
+                    "micro_sight_riser":[0,0,-1,1,0,0,0,0,0]
+                },
+                "top_mounted_sight":{
+                    "osight_red_dot": [0,0,0,0,0,0,0,0,0],
+                    "combat_red_dot_sight": [0,0,0,0,0,0,0,0,0],
+                    "mini_red_dot_sight": [0,0,0,0,0,0,0,0,0],
+                    "xro_quick_response_sight": [0,0,0,0,0,0,0,0,0],
+                    "panoramic_red_dot_sight": [0,0,0,0,0,0,0,0,0]
+                },
+                "rail_bipod":{
+                    "practical_bipod": [0,0,0,-4,0,0,0,0,0]
+                },
+                "muzzle": {
+                    "poseidon_flash_hider": [0, 0, 6, -1, 0, 0, 0, 0, 0],
+                    "sandstorm_vertical_compensator": [0, 0, 9, -2, 0, 0, 0, 0, 0],
+                    "bastion_horizontal_compensator": [0, 0, 9, -2, 0, 0, 0, 0, 0],
+                    "slient_suppressor": [0, 4, 6, -8, -4, 0, -8, 0, 66],
+                    "blazing_fire_suppessor": [0, 0, 6, -1, 0, 0, 0, 0, 0],
+                    "whisper_tactical_suppressor": [0, 3, 5, -3, -3, 0, 0, 0, 50],
+                    "titanium_contest_muzzle_brake": [0, 0, 9, -2, 0, 0, 0, 0, 0],
+                    "m7_practical_suppressor": [0, 0, 8, -6, 0, 0, 0, 0, 0],
+                    "advanced_multi_caliber_suppressor": [0, 0, 5, -3, 0, 0, 0, 0, 0],
+                    "spiral_fire_flash_hider": [0, 0, 4, 0, 1, 0, 0, 0, 0],
+                    "steel_muzzle_brake": [0, 0, 6, 0, -1, 0, 0, 0, 0],
+                    "practical_suppressor": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+                    "ops_suppressor": [0, 0, 8, -5, -3, 0, 0, 0, 0],
+                    "birdcage_flash_hider": [0, 0, 3, 0, 1, 0, 0, 0, 0],
+                    "practical_flash_hider": [0, 0, 2, 0, 2, 0, 0, 0, 0]
+                },
+                "right_rail2":{
+                    "flare_tactical_flashlight": [0,0,0,-1,0,0,0,0,0],
+                    "* laser-light combo": [0,0,0,-4,0,0,0,0,0],
+                    "olight_baldr_pro_r_multi_function_flashlight": [0,0,0,-5,0,-8,0,0,0],
+                    "olight_odin_s": [0,0,0,-1,0,0,0,0,0],
+                    "olight_warrior_3s": [0,0,0,-4,-4,0,0,0,0],
+                    "practical_weapon_light": [0,0,0,-1,0,0,0,0,0],
+                    "modular_handguard_panel": [0,0,1,-2,1,0,0,0,0],
+                    "hornet_handguard": [0,0,0,0,0,4,0,0,0],
+                    "dd_python_handguard": [0,0,0,1,0,0,0,0,0],
+                    "kc_hound_handguard": [0,0,0,0,1,0,0,0,0],
+                    "ranger_handguard": [0,0,1,0,0,0,0,0,0]
+                },
+                "left_rail2":{
+                    "flare_tactical_flashlight": [0,0,0,-1,0,0,0,0,0],
+                    "* laser-light combo": [0,0,0,-4,0,0,0,0,0],
+                    "olight_baldr_pro_r_multi_function_flashlight": [0,0,0,-5,0,-8,0,0,0],
+                    "olight_odin_s": [0,0,0,-1,0,0,0,0,0],
+                    "olight_warrior_3s": [0,0,0,-4,-4,0,0,0,0],
+                    "practical_weapon_light": [0,0,0,-1,0,0,0,0,0],
+                    "modular_handguard_panel": [0,0,1,-2,1,0,0,0,0],
+                    "hornet_handguard": [0,0,0,0,0,4,0,0,0],
+                    "dd_python_handguard": [0,0,0,1,0,0,0,0,0],
+                    "kc_hound_handguard": [0,0,0,0,1,0,0,0,0],
+                    "ranger_handguard": [0,0,1,0,0,0,0,0,0]
+                },
+                "foregrip2":{
+                    "rk_0_foregrip": [0,0,6,0,0,0,0,0,0],
+                    "k1_elite_bevel_foregrip":[0,0,6,0,0,0,0,0,0],
+                    "competition_hand_stop":[0,0,-2,5,0,12,0,0,0],
+                    "phase_combat_foregrip":[0,0,3,2,1,0,0,0,0],
+                    "tactical_vertical_foregrip":[0,0,0,6,0,0,0,0,0],
+                    "x25u_angled_combat_grip":[0,0,10,-3,-3,8,0,0,0],
+                    "resonant_ergonomic_grip":[0,0,7,-1,0,0,0,0,0],
+                    "collapsible_bipod_grip":[0,0,0,1,0,-12,0,0,0],
+                    "cr_prism_hand_stop":[0,0,6,0,0,0,0,0,0],
+                    "angled_hand_stop":[0,0,-2,8,0,0,0,0,0],
+                    "secret_order_bevel_foregrip": [0,0,7,-1,0,0,0,0,0],
+                    "phantom_vertical_foregrip": [0,0,0,8,-2,0,0,0,0],
+                    "daybreak_vertical_flashlight_grip": [0,0,6,-7,2,0,0,0,0],
+                    "dawn_angled_flashlight_grip": [0,0,8,-5,-2,0,0,0,0],
+                    "tactical_angled_foregrip": [0,0,4,2,0,0,0,0,0],
+                    "resonant_mkii_foregrip": [0,0,4,4,-2,0,0,0,0],
+                    "vfg_knight_foregrip": [0,0,0,4,0,0,0,0,0],
+                    "folding_grip":[0,0,0,1,5,0,0,0,0],
+                    "mini_hand_stop":[0,0,0,2,0,8,0,0,0],
+                    "practical_vertical_foregrip":[0,0,4,0,0,0,0,0,0],
+                    "zfsg_tactical_grip": [0,0,1,0,0,12,0,0,0]
+                },
+                "upper_rail":{
+                    "flare_tactical_flashlight": [0,0,0,-1,0,0,0,0,0],
+                    "* laser-light combo": [0,0,0,-4,0,0,0,0,0],
+                    "olight_baldr_pro_r_multi_function_flashlight": [0,0,0,-5,0,-8,0,0,0],
+                    "olight_odin_s": [0,0,0,-1,0,0,0,0,0],
+                    "olight_warrior_3s": [0,0,0,-4,-4,0,0,0,0],
+                    "practical_weapon_light": [0,0,0,-1,0,0,0,0,0]
+                },
+                "left_patch":{
+                    "modular_handguard_panel": [0,0,1,-2,1,0,0,0,0],
+                    "hornet_handguard": [0,0,0,0,0,4,0,0,0],
+                    "dd_python_handguard": [0,0,0,1,0,0,0,0,0],
+                    "kc_hound_handguard": [0,0,0,0,1,0,0,0,0],
+                    "ranger_handguard": [0,0,1,0,0,0,0,0,0]
+                },
+                "right_patch":{
+                    "modular_handguard_panel": [0,0,1,-2,1,0,0,0,0],
+                    "hornet_handguard": [0,0,0,0,0,4,0,0,0],
+                    "dd_python_handguard": [0,0,0,1,0,0,0,0,0],
+                    "kc_hound_handguard": [0,0,0,0,1,0,0,0,0],
+                    "ranger_handguard": [0,0,1,0,0,0,0,0,0]
+                },
+                "upper_patch":{
+                    "modular_handguard_panel": [0,0,1,-2,1,0,0,0,0],
+                    "hornet_handguard": [0,0,0,0,0,4,0,0,0],
+                    "dd_python_handguard": [0,0,0,1,0,0,0,0,0],
+                    "kc_hound_handguard": [0,0,0,0,1,0,0,0,0],
+                    "ranger_handguard": [0,0,1,0,0,0,0,0,0]
+                },
+                "barrel":{
+                    "ar_specops_integrally_suppressed_combo": [0,3,12,-3,-4,0,0,0,50],
+                    "ar_raid_short_barrel_combo": [0,0,4,6,-6,8,0,0,0],
+                    "ar_trench_standard_barrel_combo": [0,2,5,0,0,0,0,0,33],
+                    "ar_gabriel_long_barrel_combo": [0,5,7,-7,4,-12,0,0,83],
+                    "ar_carbon_fiber_barrel_combo": [0,3,6,-5,3,-12,0,0,50]
+                },
+                "stock_kit":{
+                    "resonant_2_integral_stock":[0,0,7,10,-6,4,0,0,0],
+                    "restricted_zone_integral_stock":[0,0,11,-6,7,0,0,0,0]
+                },
+                "stock": {
+                    "ur_spec_ops_tactical": [0, 0, 6, -4, 4, 0, 0, 0, 0],
+                    "shadow_buffer_tube": [0, 0, 2, 10, -6, 0, 0, 0, 0],
+                    "elite_light": [0, 0, 3, 3, 0, 0, 0, 0, 0],
+                    "416_stable": [0, 0, 4, -6, 8, 0, 0, 0, 0],
+                    "invasion_core": [0, 0, 6, 0, 0, 0, 0, 0, 0],
+                    "416_light": [0, 0, 6, 6, -6, 0, 0, 0, 0],
+                    "cardinal_stable": [0, 0, 6, 0, 0, 0, 0, 0, 0],
+                    "skeleton_sniper": [0, 0, -4, 8, 6, -16, 0, 0, 0],
+                    "practical_light": [0, 0, 0, 4, 0, 0, 0, 0, 0],
+                    "practical_tactical": [0, 0, 4, 0, 0, 0, 0, 0, 0],
+                    "practical_stable": [0, 0, 2, 0, 2, 0, 0, 0, 0],
+                    "m4_recoil_buffer_tube": [0, 0, -7, 12, -4, 12, 0, 0, 0],
+                    "m16a4_stable_stock": [0,0,5,0,0,0,0,0,0]
+                },
+                "cheek_pad": {
+                    "universal_cheek_pad": [0,0,1,0,3,0,0,0,0]
+                },
+                "rear_grip": {
+                    "ar_heavy_tower_grip": [0, 0, 1, 1, 1, 1, 0, 0, 0],
+                    "invasion_rear_grip": [0, 0, 3, 3, 0, 0, 0, 0, 0],
+                    "phantom_rear_grip": [0, 0, 3, 7, -4, 0, 0, 0, 0],
+                    "hurricane_d1_rear_grip": [0, 0, 0, 4, 0, 0, 0, 0, 0],
+                    "marksman_d2_rear_grip": [0, 0, 0, 0, 4, 0, 0, 0, 0],
+                    "m7_stable_rear_grip": [0, 0, 3, 1, 0, 0, 0, 0, 0],
+                    "416_practical_rear_grip": [0, 0, 0, 2, 2, 0, 0, 0, 0]
+                },
+                "grip_mount":{
+                    "stable_grip_base": [0,0,2,-5,7,0,0,0,0],
+                    "balanced_grip_base": [0,0,1,1,1,4,0,0,0]    
+                },
+                "mag":{
+                    "5.56_30_polymer": [0,0,0,6,0,0,0,0,0],
+                    "m4_45": [0,0,-1,-5,-2,-8,0,15,0],
+                    "m4_60": [0,0,-3,-9,-4,0,0,30,0]
+                },
+                "mag_mount":{
+                    "badger": [0,0,0,1,0,0,0,0,0]
+                }
+            }
+        },
+        "ci19":{
+            "attributes":{
+                "Damage": 26,
+                "Range": 27,
+                "Control": 42,
+                "Handling": 60,
+                "Stability": 50,
+                "Accuracy": 56,
+                "fire_rate": 706,
+                "capacity": 30,
+                "muzzle_velocity": 550
+            },
+            "parts":{
+                "optic":{
+                    "HAMR_Combined_Scope": [0,0,0,-6,0,0,0,0,0],
+                    "1P-29_russian_3x_scope": [0,0,0,-4,0,0,0,0,0],
+                    "lpvo_scope": [0,0,0,-6,0,0,0,0,0],
+                    "viewpoint_3x_scope": [0,0,0,-4,0,0,0,0,0],
+                    "recon_1.5/5_adjustable_scope": [0,0,0,-8,3,0,0,0,0],
+                    "3/7_adjustable_scope": [0,0,0,-8,3,0,0,0,0],
+                    "m157_fire_control_optical_system": [0,0,0,-6,0,0,0,0,0],
+                    "insight_3/7_sniper_scope": [0,0,0,-8,0,0,0,0,0],
+                    "acog_precision_6x_scope": [0,0,0,-2,0,0,0,0,0],
+                    "osight_red_dot": [0,0,0,0,0,0,0,0,0],
+                    "cobra_accuracy_sight": [0,0,0,0,0,0,0,0,0],
+                    "okp_7_reflex_sight": [0,0,0,0,0,0,0,0,0],
+                    "xcog_assault_3.5x_scope": [0,0,0,-4,0,0,0,0,0],
+                    "combat_red_dot_sight": [0,0,0,0,0,0,0,0,0],
+                    "mini_red_dot_sight": [0,0,0,0,0,0,0,0,0],
+                    "xro_quick_response_sight": [0,0,0,0,0,0,0,0,0],
+                    "panoramic_red_dot_sight": [0,0,0,0,0,0,0,0,0],
+                    "multi_purpose_tactical_riser": [0,0,-1,1,0,0,0,0,0],
+                    "micro_sight_riser": [0,0,-1,1,0,0,0,0,0],
+                    "ap5000_reflex_sight": [0,0,0,0,0,0,0,0,0],
+                    "holographic_sight_type_ii": [0,0,0,0,0,0,0,0,0],
+                    "reflex_sight": [0,0,0,0,0,0,0,0,0],
+                    "russian_accuracy_2x_scope": [0,0,0,0,0,0,0,0,0],
+                    "holographic_sight": [0,0,0,0,0,0,0,0,0]
+                },
+                "offset_optic":{
+                    "offset_osight_red_dot": [0,0,0,-1,0,0,0,0,0],
+                    "offset_combat_red_dot_sight": [0,0,0,-1,0,0,0,0,0],
+                    "offset_mini_red_dot_sight": [0,0,0,-1,0,0,0,0,0],
+                    "offset_xro_quick_response_sight": [0,0,0,-1,0,0,0,0,0],
+                    "offset_panoramic_red_dot_sight": [0,0,0,-1,0,0,0,0,0]
+                },
+                "killflash":{
+                    "honeycomb_killflash": [0,0,0,-3,-3,0,0,0,0]
+                },
+                "tactical_device":{
+                    "laser-light_combo": [0,0,0,-4,0,0,0,0,0]
+                },
+                "riser_optic":{
+                    "* sight":[0,0,0,0,0,0,0,0,0],
+                    "micro_sight_riser":[0,0,-1,1,0,0,0,0,0]
+                },
+                "top_mounted_sight":{
+                    "osight_red_dot": [0,0,0,0,0,0,0,0,0],
+                    "combat_red_dot_sight": [0,0,0,0,0,0,0,0,0],
+                    "mini_red_dot_sight": [0,0,0,0,0,0,0,0,0],
+                    "xro_quick_response_sight": [0,0,0,0,0,0,0,0,0],
+                    "panoramic_red_dot_sight": [0,0,0,0,0,0,0,0,0]
+                },
+                "muzzle": {
+                    "steel_muzzle_brake": [0, 0, 6, 0, -1, 0, 0, 0, 0],
+                    "practical_suppressor": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+                    "practical_flash_hider": [0, 0, 2, 0, 2, 0, 0, 0, 0],
+                    "poseidon_flash_hider": [0, 0, 6, -1, 0, 0, 0, 0, 0],
+                    "sandstorm_vertical_compensator": [0, 0, 9, -2, 0, 0, 0, 0, 0],
+                    "advanced_multi_caliber_suppressor": [0, 0, 5, -3, 0, 0, 0, 0, 0],
+                    "spiral_fire_flash_hider": [0, 0, 4, 0, 1, 0, 0, 0, 0],
+                    "bastion_horizontal_compensator": [0, 0, 9, -2, 0, 0, 0, 0, 0],
+                    "slient_suppressor": [0, 4, 6, -8, -4, 0, -8, 0, 66],
+                    "blazing_fire_suppessor": [0, 0, 6, -1, 0, 0, 0, 0, 0],
+                    "whisper_tactical_suppressor": [0, 3, 5, -3, -3, 0, 0, 0, 50],
+                    "titanium_contest_muzzle_brake": [0, 0, 9, -2, 0, 0, 0, 0, 0],
+                    "m7_practical_suppressor": [0, 0, 8, -6, 0, 0, 0, 0, 0]
+                },
+                "foregrip2":{
+                    "rk_0_foregrip": [0,0,6,0,0,0,0,0,0],
+                    "k1_elite_bevel_foregrip":[0,0,6,0,0,0,0,0,0],
+                    "competition_hand_stop":[0,0,-2,5,0,12,0,0,0],
+                    "phase_combat_foregrip":[0,0,3,2,1,0,0,0,0],
+                    "tactical_vertical_foregrip":[0,0,0,6,0,0,0,0,0],
+                    "x25u_angled_combat_grip":[0,0,10,-3,-3,8,0,0,0],
+                    "resonant_ergonomic_grip":[0,0,7,-1,0,0,0,0,0],
+                    "collapsible_bipod_grip":[0,0,0,1,0,-12,0,0,0],
+                    "cr_prism_hand_stop":[0,0,6,0,0,0,0,0,0],
+                    "angled_hand_stop":[0,0,-2,8,0,0,0,0,0],
+                    "secret_order_bevel_foregrip": [0,0,7,-1,0,0,0,0,0],
+                    "phantom_vertical_foregrip": [0,0,0,8,-2,0,0,0,0],
+                    "daybreak_vertical_flashlight_grip": [0,0,6,-7,2,0,0,0,0],
+                    "dawn_angled_flashlight_grip": [0,0,8,-5,-2,0,0,0,0],
+                    "tactical_angled_foregrip": [0,0,4,2,0,0,0,0,0],
+                    "resonant_mkii_foregrip": [0,0,4,4,-2,0,0,0,0],
+                    "vfg_knight_foregrip": [0,0,0,4,0,0,0,0,0],
+                    "folding_grip":[0,0,0,1,5,0,0,0,0],
+                    "mini_hand_stop":[0,0,0,2,0,8,0,0,0],
+                    "practical_vertical_foregrip":[0,0,4,0,0,0,0,0,0],
+                    "zfsg_tactical_grip": [0,0,1,0,0,12,0,0,0]
+                },
+                "barrel":{
+                    "new_snow_leopard_short_barrel": [0,0,4,6,-6,8,0,0,0],
+                    "new_leviathan_tactical_long_barrel": [0,4,7,-7,4,-12,0,0,82]
+                },
+                "rail_bipod":{
+                    "practical_bipod": [0,0,0,-4,0,0,0,0,0]
+                },
+                "left_patch":{
+                    "modular_handguard_panel": [0,0,1,-2,1,0,0,0,0],
+                    "hornet_handguard": [0,0,0,0,0,4,0,0,0],
+                    "dd_python_handguard": [0,0,0,1,0,0,0,0,0],
+                    "kc_hound_handguard": [0,0,0,0,1,0,0,0,0],
+                    "ranger_handguard": [0,0,1,0,0,0,0,0,0]
+                },
+                "right_patch":{
+                    "modular_handguard_panel": [0,0,1,-2,1,0,0,0,0],
+                    "hornet_handguard": [0,0,0,0,0,4,0,0,0],
+                    "dd_python_handguard": [0,0,0,1,0,0,0,0,0],
+                    "kc_hound_handguard": [0,0,0,0,1,0,0,0,0],
+                    "ranger_handguard": [0,0,1,0,0,0,0,0,0]
+                },
+                "upper_patch":{
+                    "modular_handguard_panel": [0,0,1,-2,1,0,0,0,0],
+                    "hornet_handguard": [0,0,0,0,0,4,0,0,0],
+                    "dd_python_handguard": [0,0,0,1,0,0,0,0,0],
+                    "kc_hound_handguard": [0,0,0,0,1,0,0,0,0],
+                    "ranger_handguard": [0,0,1,0,0,0,0,0,0]
+                },
+                "upper_rail2":{
+                    "flare_tactical_flashlight": [0,0,0,-1,0,0,0,0,0],
+                    "* laser-light combo": [0,0,0,-4,0,0,0,0,0],
+                    "olight_baldr_pro_r_multi_function_flashlight": [0,0,0,-5,0,-8,0,0,0],
+                    "olight_odin_s": [0,0,0,-1,0,0,0,0,0],
+                    "olight_warrior_3s": [0,0,0,-4,-4,0,0,0,0],
+                    "practical_weapon_light": [0,0,0,-1,0,0,0,0,0],
+                    "modular_handguard_panel": [0,0,1,-2,1,0,0,0,0],
+                    "hornet_handguard": [0,0,0,0,0,4,0,0,0],
+                    "dd_python_handguard": [0,0,0,1,0,0,0,0,0],
+                    "kc_hound_handguard": [0,0,0,0,1,0,0,0,0],
+                    "ranger_handguard": [0,0,1,0,0,0,0,0,0]
+                },
+                "right_rail2":{
+                    "flare_tactical_flashlight": [0,0,0,-1,0,0,0,0,0],
+                    "* laser-light combo": [0,0,0,-4,0,0,0,0,0],
+                    "olight_baldr_pro_r_multi_function_flashlight": [0,0,0,-5,0,-8,0,0,0],
+                    "olight_odin_s": [0,0,0,-1,0,0,0,0,0],
+                    "olight_warrior_3s": [0,0,0,-4,-4,0,0,0,0],
+                    "practical_weapon_light": [0,0,0,-1,0,0,0,0,0],
+                    "modular_handguard_panel": [0,0,1,-2,1,0,0,0,0],
+                    "hornet_handguard": [0,0,0,0,0,4,0,0,0],
+                    "dd_python_handguard": [0,0,0,1,0,0,0,0,0],
+                    "kc_hound_handguard": [0,0,0,0,1,0,0,0,0],
+                    "ranger_handguard": [0,0,1,0,0,0,0,0,0]
+                },
+                "left_rail2":{
+                    "flare_tactical_flashlight": [0,0,0,-1,0,0,0,0,0],
+                    "* laser-light combo": [0,0,0,-4,0,0,0,0,0],
+                    "olight_baldr_pro_r_multi_function_flashlight": [0,0,0,-5,0,-8,0,0,0],
+                    "olight_odin_s": [0,0,0,-1,0,0,0,0,0],
+                    "olight_warrior_3s": [0,0,0,-4,-4,0,0,0,0],
+                    "practical_weapon_light": [0,0,0,-1,0,0,0,0,0],
+                    "modular_handguard_panel": [0,0,1,-2,1,0,0,0,0],
+                    "hornet_handguard": [0,0,0,0,0,4,0,0,0],
+                    "dd_python_handguard": [0,0,0,1,0,0,0,0,0],
+                    "kc_hound_handguard": [0,0,0,0,1,0,0,0,0],
+                    "ranger_handguard": [0,0,1,0,0,0,0,0,0]
+                },
+                "stock": {
+                    "ur_spec_ops_tactical": [0, 0, 6, -4, 4, 0, 0, 0, 0],
+                    "shadow_buffer_tube": [0, 0, 2, 10, -6, 0, 0, 0, 0],
+                    "elite_light": [0, 0, 3, 3, 0, 0, 0, 0, 0],
+                    "416_stable": [0, 0, 4, -6, 8, 0, 0, 0, 0],
+                    "invasion_core": [0, 0, 6, 0, 0, 0, 0, 0, 0],
+                    "416_light": [0, 0, 6, 6, -6, 0, 0, 0, 0],
+                    "cardinal_stable": [0, 0, 6, 0, 0, 0, 0, 0, 0],
+                    "skeleton_sniper": [0, 0, -4, 8, 6, -16, 0, 0, 0],
+                    "practical_light": [0, 0, 0, 4, 0, 0, 0, 0, 0],
+                    "practical_tactical": [0, 0, 4, 0, 0, 0, 0, 0, 0],
+                    "practical_stable": [0, 0, 2, 0, 2, 0, 0, 0, 0],
+                    "m4_recoil_buffer_tube": [0, 0, -7, 12, -4, 12, 0, 0, 0]
+                },
+                "rear_grip":{
+                    "new_type_vanguard_light_grip": [0,0,3,7,-4,0,0,0,0],
+                    "new_type_sumurai_grip": [0,0,6,-4,4,0,0,0,0]
+                },
+                "mag":{
+                    "5.8_newtype_60": [0,0,-3,-12,-4,0,0,30,0]
+                },
+                "mag_mount":{
+                    "badger": [0,0,0,1,0,0,0,0,0]
+                }
             }
         }
     },
