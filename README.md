@@ -2,7 +2,7 @@
  * @Author: @ydzat
  * @Date: 2024-12-13 17:21:20
  * @LastEditors: @ydzat
- * @LastEditTime: 2024-12-17 14:50:57
+ * @LastEditTime: 2024-12-17 16:11:54
  * @Description: 
 -->
 # Delta Force (International Server) loadout tool
@@ -33,6 +33,7 @@ PuLP
     mp5
     p90
     sr_3m
+    mp7
 ### rifle
     car15
 ```
@@ -77,6 +78,8 @@ weights = {
 
 # Changelog
 Now the program can run normally. 
+
++ Complete data entry for smg
 
 # Further development
 The general framework of the program has been built and the core code has been implemented. Now, you only need to enter the weapon data and the corresponding constraints in `./data/weapons.json` and `./data/rules.json` to start the calculation.

@@ -247,6 +247,31 @@
                     "sr_3m_cast_steel_tactical_barrel": ["left_rail", "right_rail"]
                 }
             }
+        },
+        "mp7":{
+            "dependencies":{
+                "optic": {
+                    "multi_purpose_tactical_riser":["riser_optic", "tactical_device"],
+                    "lpvo_scope":["killflash"],
+                    "recon_1.5/5_adjustable_scope":["killflash"],
+                    "3/7_adjustable_scope":["killflash", "top_mounted_sight"],
+                    "m157_fire_control_optical_system":["killflash" ],
+                    "insight_3/7_sniper_scope":["killflash"]
+                },
+                "barrel":{
+                    "mp7_enhanced_barrel_combo": ["left_patch", "right_patch"],
+                    "mp7_stinger_long_barrel_combo": ["left_patch", "right_patch"]
+                },
+                "mag":{
+                    "mp7_40": ["mag_mount"],
+                    "mp7_30": ["mag_mount"]
+                }
+            },
+            "conflicts":{
+                "mag":{
+                    "mp7_60": ["mag_mount"]
+                }
+            }
         }
     }
 }
