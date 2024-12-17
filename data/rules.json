@@ -38,6 +38,168 @@
                     "restricted_zone_integral_stock": ["stock", "rear_grip"]
                 }
             }
+        },
+        "ptr32":{
+            "dependencies":{
+                "optic": {
+                    "multi_purpose_tactical_riser":["riser_optic", "tactical_device"],
+                    "lpvo_scope":["killflash"],
+                    "recon_1.5/5_adjustable_scope":["killflash"],
+                    "3/7_adjustable_scope":["killflash", "top_mounted_sight"],
+                    "m157_fire_control_optical_system":["killflash" ],
+                    "insight_3/7_sniper_scope":["killflash"]
+                },
+                "barrel":{
+                    "g3_guard_standard_barrel_combo": ["rail_bipod", "left_rail2", "right_rail2", "left_patch", "right_patch"],
+                    "g3_hurricane_short_barrel_combo": ["left_rail2", "right_rail2", "left_patch", "right_patch"],
+                    "g3_enhanced_long_barrel_combo": ["rail_bipod", "left_rail", "left_patch", "right_patch"],
+                    "g3_platform_marksman_barrel_combo": ["rail_bipod", "upper_rail", "left_rail", "left_patch", "right_patch"]
+                }
+            },
+            "conflicts": {
+                "barrel": {
+                    "g3_guard_standard_barrel_combo": ["right_rail"],
+                    "g3_hurricane_short_barrel_combo": ["right_rail"]
+                }
+            }
+        },
+        "qbz95_1":{
+            "dependencies":{
+                "optic": {
+                    "multi_purpose_tactical_riser":["riser_optic", "tactical_device"],
+                    "lpvo_scope":["killflash"],
+                    "recon_1.5/5_adjustable_scope":["killflash"],
+                    "3/7_adjustable_scope":["killflash", "top_mounted_sight"],
+                    "m157_fire_control_optical_system":["killflash" ],
+                    "insight_3/7_sniper_scope":["killflash"]
+                },
+                "barrel":{
+                    "qbz95_1_tactical_long_barrel": ["rail_bipod", "left_patch", "right_patch"],
+                    "qbz95_1_longbow_barrel_combo": ["rail_bipod", "left_patch", "right_patch"]
+                },
+                "handguard_kit":{
+                    "95_longbow_platform_kit": ["optic", "upper_rail", "left_rail", "right_rail", "offset_optic"]
+                }
+            },
+            "conflicts":{
+                "mag": {
+                    "5.8_60": ["mag_mount"]
+                }
+            }
+        },
+        "akm":{
+            "dependencies":{
+                "optic": {
+                    "multi_purpose_tactical_riser":["riser_optic", "tactical_device"],
+                    "lpvo_scope":["killflash"],
+                    "recon_1.5/5_adjustable_scope":["killflash"],
+                    "3/7_adjustable_scope":["killflash", "top_mounted_sight"],
+                    "m157_fire_control_optical_system":["killflash" ],
+                    "insight_3/7_sniper_scope":["killflash"]
+                },
+                "barrel": {
+                    "akm_practical_long_barrel_combo": ["rail_bipod", "left_rail", "right_rail", "left_patch", "right_patch"],
+                    "akm_practical_standard_barrel_combo": ["right_rail2"],
+                    "akm_beaver_barrel_combo": ["upper_rail2", "left_rail", "right_rail", "left_patch", "right_patch"],
+                    "akm_transcendent_long_barrel_combo": ["rail_bipod", "upper_rail2", "left_rail2", "right_rail2", "left_patch", "right_patch"],
+                    "akm_beaver_long_barrel_combo" : ["rail_bipod", "upper_rail2", "left_rail", "right_rail", "left_patch", "right_patch"]
+                },
+                "rear_grip": {
+                    "ak_heavy_tower_grip": ["grip_mount"]
+                }
+            },
+            "conflicts":{
+                "barrel": {
+                    "akm_performance_barrel_combo": ["foregrip"]
+                },
+                "stock":{
+                    "pt3_sacrifice_stock": ["stock_pad"],
+                    "ur_spec_ops_tactical": ["stock_pad"],
+                    "mrgs_skeleton_stock": ["stock_pad"],
+                    "shadow_buffer_tube": ["stock_pad"],
+                    "pt1_spec_ops_stock": ["stock_pad"],
+                    "shadow_rail_stock": ["stock_pad"],
+                    "elite_light": ["stock_pad"],
+                    "416_stable": ["stock_pad"],
+                    "invasion_core": ["stock_pad"],
+                    "416_light": ["stock_pad"],
+                    "cardinal_stable": ["stock_pad"],
+                    "candinal_advanced_combat_stock": ["stock_pad"],
+                    "skeleton_sniper": ["stock_pad"],
+                    "ak_19_stock": ["stock_pad"],
+                    "lightning_rail_stock": ["stock_pad"],
+                    "practical_light": ["stock_pad"],
+                    "practical_tactical": ["stock_pad"],
+                    "practical_stable": ["stock_pad"],
+                    "core_rail_stock": ["stock_pad"],
+                    "ak_skeleton_stock": ["stock_pad"],
+                    "ak_bolt_cover": ["stock_pad"]
+                },
+                "mag": {
+                    "akm_70": ["mag_mount"]
+                }
+            }
+        },
+        "ak12":{
+            "dependencies":{
+                "optic": {
+                    "multi_purpose_tactical_riser":["riser_optic", "tactical_device"],
+                    "lpvo_scope":["killflash"],
+                    "recon_1.5/5_adjustable_scope":["killflash"],
+                    "3/7_adjustable_scope":["killflash", "top_mounted_sight"],
+                    "m157_fire_control_optical_system":["killflash" ],
+                    "insight_3/7_sniper_scope":["killflash"]
+                },
+                "barrel":{
+                    "ak12_frontline_long_barrel": ["rail_bipod", "left_rail", "upper_patch", "left_patch", "right_patch"],
+                    "ak12_elite_bipod_long_barrel": ["rail_bipod", "left_rail", "upper_patch", "left_patch", "right_patch"]
+                }
+            },
+            "conflicts":{
+                "mag": {
+                    "aks74_75": ["mag_mount"]
+                }
+            }
+        },
+        "m16a4":{
+            "dependencies":{
+                "optic": {
+                    "multi_purpose_tactical_riser":["riser_optic", "tactical_device"],
+                    "lpvo_scope":["killflash"],
+                    "recon_1.5/5_adjustable_scope":["killflash"],
+                    "3/7_adjustable_scope":["killflash", "top_mounted_sight"],
+                    "m157_fire_control_optical_system":["killflash" ],
+                    "insight_3/7_sniper_scope":["killflash"]
+                },
+                "barrel":{
+                    "ar_standard_barrel_combo": ["foregrip2", "rail_bipod", "upper_rail", "left_rail2", "right_rail2", "upper_patch", "left_patch", "right_patch"],
+                    "ar_carbon_fiber_barrel_combo": ["foregrip2", "rail_bipod", "upper_rail", "left_rail2", "right_rail2", "upper_patch", "left_patch", "right_patch"],
+                    "ar_raid_short_barrel_combo": ["foregrip2", "upper_rail2", "left_rail2", "right_rail2"],
+                    "ar_trench_standard_barrel_combo": ["foregrip2", "rail_bipod", "upper_rail", "left_rail2", "right_rail2", "upper_patch", "left_patch", "right_patch"],
+                    "ar_gabriel_long_barrel_combo": ["foregrip2", "rail_bipod", "upper_rail", "left_rail2", "right_rail2", "upper_patch", "left_patch", "right_patch"],
+                    "ar_specops_integrally_suppressed_combo": ["foregrip2", "rail_bipod", "upper_rail", "left_rail2", "right_rail2", "upper_patch", "left_patch", "right_patch"]
+                },
+                "rear_grip": {
+                    "ar_heavy_tower_grip": ["grip_mount"]
+                }
+            },
+            "conflicts":{
+                "barrel": {
+                    "ar_standard_barrel_combo": ["lower_rail"],
+                    "ar_carbon_fiber_barrel_combo": ["lower_rail"],
+                    "ar_raid_short_barrel_combo": ["lower_rail"],
+                    "ar_trench_standard_barrel_combo": ["lower_rail"],
+                    "ar_gabriel_long_barrel_combo": ["lower_rail"],
+                    "ar_specops_integrally_suppressed_combo" : ["muzzle", "lower_rail"]
+                },
+                "mag": {
+                    "m4_60": ["mag_mount"]
+                },
+                "stock_kit": {
+                    "resonant_2_integral_stock": ["stock", "rear_grip"],
+                    "restricted_zone_integral_stock": ["stock", "rear_grip"]
+                }
+            }
         }
     },
     "smg": {

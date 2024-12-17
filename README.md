@@ -2,7 +2,7 @@
  * @Author: @ydzat
  * @Date: 2024-12-13 17:21:20
  * @LastEditors: @ydzat
- * @LastEditTime: 2024-12-17 16:11:54
+ * @LastEditTime: 2024-12-17 19:35:06
  * @Description: 
 -->
 # Delta Force (International Server) loadout tool
@@ -36,6 +36,12 @@ PuLP
     mp7
 ### rifle
     car15
+    ptr32
+    qbz95_1
+    akm
+    ak12
+    m16a4
+    as_val (Data entry in progress...)
 ```
 
 

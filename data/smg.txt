@@ -1,0 +1,10 @@
+==List of Shotgun==
+{| class="article-table sortable"
+! Name !! Dmg !! Range !! Fire Rate !! Cap !! Ctrl !! Hdlg !! Stab !! Acc !! Mode
+|-
+| [[M1014 Shotgun]] || 20*8 || 4 || 261 rpm || 7 || 28 || 53 || 45 || 52 || S
+|-
+| [[S12K Shotgun]] || 17*8 || 4 || 300 rpm || 5 || 36 || 49 || 49 || 48 || S
+|-
+| [[M870 Shotgun]] || 30*8 || 10 || 74 rpm || 6 || 26 || 57 || 41 || 41 || S
+|}

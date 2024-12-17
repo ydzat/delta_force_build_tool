@@ -1,0 +1,20 @@
+==List of Pistol==
+{| class="article-table sortable"
+! Name !! Dmg !! Range !! Fire Rate !! Cap !! Ctrl !! Hdlg !! Stab !! Acc !! Mode
+|-
+| [[G17_Pistol|G17]] || 33 || 15 || 462 rpm || 17 || 42 || 70 || 35 || 75 || S
+|-
+| [[QSZ-92G_Pistol|QSZ-92G]] || 34 || 15 || 375 rpm || 15 || 55 || 64 || 41 || 77 || S
+|-
+| [[93R_Pistol|93R]] || 25 || 15 || 672 rpm || 12 || 44 || 67 || 38 || 78 || B
+|-
+| [[Desert Eagle_Pistol|Desert Eagle]] || 50 || 20 || 207 rpm || 7 || 40 || 66 || 39 || 71 || S
+|-
+| [[G18_Pistol|G18]] || 14 || 10 || 1172 rpm || 17 || 30 || 62 || 43 || 67 || A
+|-
+| [[Revolver_Pistol|Revolver]] || 52 || 35 || 182 rpm || 6 || 34 || 62 || 43 || 65 || S
+|-
+| [[M1911_Pistol|M1911]] || 35 || 20 || 373 rpm || 7 || 39 || 65 || 40 || 67 || S
+|}
+
+[[Category:Firearms]]

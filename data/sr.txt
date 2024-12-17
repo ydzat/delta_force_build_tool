@@ -1,0 +1,12 @@
+==List of Sniper Rifle==
+{| class="article-table sortable"
+! Name !! Dmg !! Range !! Fire Rate !! Cap !! Ctrl !! Hdlg !! Stab !! Acc !! Mode
+|-
+| [[SV-98 Sniper Rifle]] || 76 || 90 || 44 rpm || 7 || 55 || 49 || 74 || 26 || S
+|-
+| [[R93 Sniper Rifle]] || 74 || 80 || 56 rpm || 10 || 55 || 57 || 66 || 28 || S
+|-
+| [[M700 Sniper Rifle]] || 72 || 75 || 48 rpm || 5 || 24 || 48 || 70 || 27 || S
+|-
+| [[AWM Sniper Rifle]] || 85 || 100 || 35 rpm || 5 || 20 || 44 || 74 || 23 || S
+|}

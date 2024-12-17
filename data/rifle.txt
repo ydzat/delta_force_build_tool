@@ -1,0 +1,37 @@
+{| class="article-table sortable"
+! Name !! Dmg !! Range !! Fire Rate !! Cap !! Ctrl !! Hdlg !! Stab !! Acc !! Mode
+|-
+| [[AKS-74 Assault Rifle]] || 27 || 30 || 533 rpm || 30 || 35 || 60 || 53 || 52 || S/A
+|-
+| [[CAR-15 Assault Rifle]] || 25 || 30 || 632 rpm || 30 || 50 || 58 || 55 || 53 || S/A
+|-
+| [[QBZ95-1 Assault Rifle]] || 22 || 40 || 679 rpm || 30 || 52 || 55 || 58 || 54 || S/A
+|-
+| [[M4A1 Assault Rifle]] || 20 || 30 || 800 rpm || 30 || 41 || 58 || 55 || 55 || S/A
+|-
+| [[M16A4 Assault Rifle]] || 25 || 30 || 672 rpm || 30 || 40 || 56 || 57 || 54 || S/B
+|-
+| [[SG 552 Assault Rifle]] || 19 || 40 || 906 rpm || 20 || 46 || 61 || 52 || 53 || S/A/B
+|-
+| [[AK-12 Assault Rifle]] || 21 || 30 || 735 rpm || 30 || 48 || 57 || 56 || 54 || S/A/B
+|-
+| [[PTR-32 Assault Rifle]] || 28 || 30 || 632 rpm || 30 || 32 || 56 || 57 || 45 || S/A
+|-
+| [[AKM Assault Rifle]] || 26 || 30 || 600 rpm || 30 || 39 || 54 || 55 || 53 || S/A
+|-
+| [[AS Val Assault Rifle]] || 20 || 20 || 972 rpm || 15 || 43 || 62 || 51 || 57 || S/A
+|-
+| [[CI-19 Assault Rifle]] || 26 || 27 || 706 rpm || 30 || 42 || 60 || 50 || 56 || S/A
+|-
+| [[K416 Assault Rifle]] || 21 || 20 || 880 rpm || 30 || 44 || 61 || 52 || 57 || S/A
+|-
+| [[AUG Assault Rifle]] || 20 || 40 || 679 rpm || 30 || 60 || 54 || 59 || 53 || S/A
+|-
+| [[G3 Battle Rifle]] || 26 || 40 || 533 rpm || 20 || 32 || 51 || 62 || 45 || S/A
+|-
+| [[SCAR-H Battle Rifle]] || 25 || 40 || 585 rpm || 20 || 40 || 58 || 55 || 45 || S/A
+|-
+| [[Ash-12 Battle Rifle]] || 34 || 40 || 500 rpm || 20 || 24 || 52 || 61 || 43 || S/A
+|-
+| [[M7 Battle Rifle]] || 25 || 40 || 649 rpm || 20 || 34 || 55 || 58 || 47 || S/A
+|}

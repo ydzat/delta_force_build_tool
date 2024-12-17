@@ -2,7 +2,7 @@
 Author: @ydzat
 Date: 2024-12-16 02:39:13
 LastEditors: @ydzat
-LastEditTime: 2024-12-17 16:08:02
+LastEditTime: 2024-12-17 19:04:37
 Description: 
 '''
 from data_manager import DataManager
@@ -15,8 +15,8 @@ def main():
     data_manager.load_rules()
 
     # Initialize optimizer
-    weapon_type = "smg"
-    weapon_name = "mp7"
+    weapon_type = "rifle"
+    weapon_name = "m16a4"
 
     optimizer = Optimizer(data_manager, weapon_type, weapon_name)
     optimizer.setup_model()
@@ -24,7 +24,7 @@ def main():
     # Add user-specified constraints
     optimizer.add_constraints([
         {"attribute": "Handling", "operator": ">=", "value": 50},
-        {"attribute": "Stability", "operator": "<=", "value": 50},
+        {"attribute": "Stability", "operator": ">=", "value": 50},
         #{"attribute": "mag", "operator": "=", "value": "m4_45"}
     ])
 

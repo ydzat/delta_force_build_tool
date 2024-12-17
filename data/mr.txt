@@ -1,0 +1,18 @@
+==List of Marksman Rifle==
+{| class="article-table sortable"
+! Name !! Dmg !! Range !! Fire Rate !! Cap !! Ctrl !! Hdlg !! Stab !! Acc !! Mode
+|-
+| [[Mini-14 Marksman Rifle]] || 25 || 90 || 590 rpm || 20 || 60 || 52 || 63 || 37 || S
+|-
+| [[VSS Marksman Rifle]] || 33 || 125 || 480 rpm || 15 || 46 || 54 || 61 || 38 || S/A
+|-
+| [[PSG-1 Marksman Rifle]] || 35 || 90 || 300 rpm || 10 || 60 || 49 || 66 || 34 || S
+|-
+| [[SVD Sniper Rifle]] || 40 || 70 || 300 rpm || 10 || 42 || 48 || 67 || 34 || S
+|-
+| [[SR-25 Marksman Rifle]] || 35 || 90 || 364 rpm || 10 || 56 || 56 || 59 || 40 || S
+|-
+| [[SKS Marksman Rifle]] || 27 || 55 || 510 rpm || 10 || 30 || 55 || 60 || 38 || S
+|-
+| [[M14 Marksman Rifle]] || 27 || 27 || 727 rpm || 10 || 26 || 58 || 55 || 48 || S/A
+|}
