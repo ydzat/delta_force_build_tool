@@ -2,7 +2,7 @@
  * @Author: @ydzat
  * @Date: 2024-12-13 17:21:20
  * @LastEditors: @ydzat
- * @LastEditTime: 2024-12-18 01:18:19
+ * @LastEditTime: 2024-12-18 02:41:31
  * @Description: 
 -->
 # Delta Force (International Server) loadout tool
@@ -52,6 +52,10 @@ PuLP
     scar_h
     ash12
     m7
+### lmg
+    pkm
+    m249
+    m250
 ```
 
 

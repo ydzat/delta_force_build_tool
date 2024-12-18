@@ -2,7 +2,7 @@
 Author: @ydzat
 Date: 2024-12-16 02:39:13
 LastEditors: @ydzat
-LastEditTime: 2024-12-18 01:43:48
+LastEditTime: 2024-12-18 02:52:19
 Description: 
 '''
 from data_manager import DataManager
@@ -15,8 +15,8 @@ def main():
     data_manager.load_rules()
 
     # Initialize optimizer
-    weapon_type = "rifle"
-    weapon_name = "m7"
+    weapon_type = "lmg"
+    weapon_name = "m250"
 
     optimizer = Optimizer(data_manager, weapon_type, weapon_name)
     optimizer.setup_model()

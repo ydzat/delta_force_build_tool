@@ -719,5 +719,74 @@
                 }
             }
         }
+    },
+    "lmg":{
+        "pkm":{
+            "dependencies":{
+                "optic": {
+                    "multi_purpose_tactical_riser":["riser_optic", "tactical_device"],
+                    "lpvo_scope":["killflash"],
+                    "recon_1.5/5_adjustable_scope":["killflash"],
+                    "3/7_adjustable_scope":["killflash", "top_mounted_sight"],
+                    "m157_fire_control_optical_system":["killflash" ],
+                    "insight_3/7_sniper_scope":["killflash"]
+                },
+                "barrel":{
+                    "pkm_trench_barrel": ["foregrip2", "upper_rail2", "left_rail", "right_rail"],
+                    "pkm_horizon_heavy_barrel": ["foregrip2", "upper_rail2", "left_rail", "right_rail"]
+                },
+                "rear_grip": {
+                    "ak_heavy_tower_grip": ["grip_mount"]
+                }
+            },
+            "conflicts":{
+                "barrel":{
+                    "pkm_trench_barrel": ["rail_bipod"]
+                }
+            }
+        },
+        "m249":{
+            "dependencies":{
+                "optic": {
+                    "multi_purpose_tactical_riser":["riser_optic", "tactical_device"],
+                    "lpvo_scope":["killflash"],
+                    "recon_1.5/5_adjustable_scope":["killflash"],
+                    "3/7_adjustable_scope":["killflash", "top_mounted_sight"],
+                    "m157_fire_control_optical_system":["killflash" ],
+                    "insight_3/7_sniper_scope":["killflash"]
+                },
+                "handguard":{
+                    "m249_mil_std_rail_handguard": ["upper_rail"]
+                },
+                "mag":{
+                    "556_30": ["mag_mount"],
+                    "m4_45": ["mag_mount"]
+                }
+            },
+            "conflicts":{
+                "handguard":{
+                    "m249_bipod_handguard": ["foregrip2","rail_bipod","left_rail"],
+                    "m249_mil_std_rail_handguard": ["rail_bipod"]
+                },
+                "mag":{
+                    "default": ["mag_mount"]
+                }
+            }
+        },
+        "m250":{
+            "dependencies":{
+                "optic": {
+                    "multi_purpose_tactical_riser":["riser_optic", "tactical_device"],
+                    "lpvo_scope":["killflash"],
+                    "recon_1.5/5_adjustable_scope":["killflash"],
+                    "3/7_adjustable_scope":["killflash", "top_mounted_sight"],
+                    "m157_fire_control_optical_system":["killflash" ],
+                    "insight_3/7_sniper_scope":["killflash"]
+                },
+                "rear_grip": {
+                    "ar_heavy_tower_grip": ["grip_mount"]
+                }
+            }
+        }
     }
 }
