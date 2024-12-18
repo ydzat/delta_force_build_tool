@@ -2,7 +2,7 @@
 Author: @ydzat
 Date: 2024-12-16 02:39:13
 LastEditors: @ydzat
-LastEditTime: 2024-12-17 22:49:06
+LastEditTime: 2024-12-18 01:10:33
 Description: 
 '''
 from data_manager import DataManager
@@ -16,7 +16,7 @@ def main():
 
     # Initialize optimizer
     weapon_type = "rifle"
-    weapon_name = "ci19"
+    weapon_name = "scar_h"
 
     optimizer = Optimizer(data_manager, weapon_type, weapon_name)
     optimizer.setup_model()

@@ -2,7 +2,7 @@
  * @Author: @ydzat
  * @Date: 2024-12-13 17:21:20
  * @LastEditors: @ydzat
- * @LastEditTime: 2024-12-17 22:37:13
+ * @LastEditTime: 2024-12-18 00:20:43
  * @Description: 
 -->
 # Delta Force (International Server) loadout tool
@@ -46,6 +46,10 @@ PuLP
     sg552
     m4a1
     ci19
+    k416
+    aug
+    g3
+    scar_h
 ```
 
 
