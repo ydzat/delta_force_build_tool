@@ -449,6 +449,41 @@
                     "scar_h_50": ["mag_mount"]
                 }
             }
+        },
+        "ash12":{
+            "dependencies":{
+                "optic": {
+                    "multi_purpose_tactical_riser":["riser_optic", "tactical_device"],
+                    "lpvo_scope":["killflash"],
+                    "recon_1.5/5_adjustable_scope":["killflash"],
+                    "3/7_adjustable_scope":["killflash", "top_mounted_sight"],
+                    "m157_fire_control_optical_system":["killflash" ],
+                    "insight_3/7_sniper_scope":["killflash"]
+                }
+            }
+        },
+        "m7":{
+            "dependencies":{
+                "optic": {
+                    "multi_purpose_tactical_riser":["riser_optic", "tactical_device"],
+                    "lpvo_scope":["killflash"],
+                    "recon_1.5/5_adjustable_scope":["killflash"],
+                    "3/7_adjustable_scope":["killflash", "top_mounted_sight"],
+                    "m157_fire_control_optical_system":["killflash" ],
+                    "insight_3/7_sniper_scope":["killflash"]
+                },
+                "barrel":{
+                    "m7_tidal_ultra_long_barrel_combo": ["upper_patch"]
+                },
+                "rear_grip": {
+                    "ar_heavy_tower_grip": ["grip_mount"]
+                }
+            },
+            "conflicts":{
+                "barrel":{
+                    "m7_lizard_short_barrel": ["rail_bipod"]
+                }
+            }
         }
     },
     "smg": {
