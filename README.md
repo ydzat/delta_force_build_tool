@@ -12,6 +12,8 @@ The solver was changed from gurobi to pulp, but the old gurobi files are still r
 
 For general users, please use `main_cbc.py` to perform calculations.
 
+# Hint: The current gun data is based on the international server S1 battlefield. It was only after April that I had time to continue updating the calculator (adding support for the tomb-grabbing mode).
+
 # Require
 
 python 3
@@ -99,7 +101,7 @@ weights = {
 # Changelog
 Now the program can run normally. 
 
-+ Complete data entry for smg
++ Complete data entry
 
 # Further development
 The general framework of the program has been built and the core code has been implemented. Now, you only need to enter the weapon data and the corresponding constraints in `./data/weapons.json` and `./data/rules.json` to start the calculation.
